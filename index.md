@@ -1,6 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
+
+**Welcome**
+
+Take a look at what you found more interesting. There is a blog and my CV. You will also find topics that I'm interested in, and all the projects I'm currently developing
+
+On the about page you can get my [CV](cv)
