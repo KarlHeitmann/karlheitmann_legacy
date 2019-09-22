@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Algo Personal"
+date: 2019-07-12 1:02:00 -0400
+categories: personal
+---
+
+La realidad se distingue de la más delirante de las fantasías (o
+de la más elaborada utopía) en el infinito pormenor que constituye a la realidad. 
+Esto me ha llevado a dedicar bastantes horas al estudio de la realidad: estudiar la historia, filósofos, la 
+ciencia y la teconología. Esto último es a lo que me dedico profesionalmente.
+
+En cada proyecto nuevo en el que me he embarcado procuro aprender algo nuevo. 
+Así, en el año 2014 comencé un trabajo en que yo era el desarrollador fullstack de aplicaciones web, y pude 
+aprender a hacer unit testing en RoR, hacer páginas estilo responsive con Bootstrap, utilizar websockets 
+para mostrar información en tiempo real, entre otras cosas. Me serví de libros que adquirí en [leanpub](https://leanpub.com/), y ahora estoy estudiando en [platzi](https://platzi.com/)
+
+Donde todos piensan lo mismo, nadie piensa mucho. Por eso me gusta buscar diferentes puntos de vista
+sobre temas de actualidad y contingencia. Una actividad que me gusta realizar es juntarme con gente que
+piensa distinto a mi, y conversar sobre algún tema polémico. Esta actividad se disfruta particularmente en 
+persona, porque a través de las redes sociales muchos leemos e interpretamos opiniones de acuerdo a nuestro
+sesgo de confirmación. En una comunicación uno a uno el lenguaje corporal y el tono de voz ayudan a 
+intercambiar ideas de manera más directa, disminuyendo los errores de interpretación.
+
+En mis horas de ocio, me dedico a estudiar alguna tecnología nueva, a informarme de lo que ocurre en el 
+mundo actual, cocinar algo rico o tocar la guitarra eléctrica.
+
+Cuando tenga algo entretenido para compartir lo haré por este medio.

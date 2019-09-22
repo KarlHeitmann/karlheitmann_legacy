@@ -4,6 +4,4 @@ title: CV
 permalink: /cv/
 ---
 
-# Education
-
-I went to
+# Under Construction...

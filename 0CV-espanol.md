@@ -49,4 +49,22 @@ Diseñador y programador de base de datos, desarrollo web Resed SpA 2014-2015 Re
 
 # Proyectos
 
-Mis proyectos favoritos:
+En mi perfil en GitHub se encuentran todos los proyectos de los que he participado y pueden ser publicados. Destaco los siguientes:
+
+- [Solución de Sudoku utilizando algoritmos genéticos](https://github.com/KarlHeitmann/sudoku_solver_evolutionary_algorithm)
+
+El libro [Algoritmos Evolutivos: un Enfoque Práctico](https://www.amazon.com/Algoritmos-Evolutivos-Practico-ARAUJO-CERVIGON/dp/8478979115?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-d-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8478979115) 
+fue mi primer acercamiento a la inteligencia artificial, a fines de los años 2000, pero lamentablemente ese 
+ha sido el único acercamiento que he tenido al tema. El libro después de dar una pincelada de como funcionan
+los algoritmos evolutivos o genéticos, entrega una lista de diez problemas típicos que se pueden resolver
+con esta técnica. Para cada problema, el libro propone una solución en pseudo código que uno debe llevar 
+al lenguaje más adecuado para resolver el problema.
+
+En mi caso, escogí el problema de resolver un sudoku utilizando algoritmos evolutivos, y realicé mi 
+implementación del pseudo código utilizando lenguaje ruby. Principalmente porque en ese tiempo quería 
+practicar utilizando este lenguaje, no porque ruby fuera el lenguaje ideal para trabajar con algoritmos 
+evolutivos.
+
+
+Continuará...
+
