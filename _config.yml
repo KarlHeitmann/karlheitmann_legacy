@@ -23,15 +23,15 @@ urls:
 
 # Edit these details 
 
-author_logo: profile.png
+author_logo: perfil.jpg
 author: Karl Heitmann
-author_bio: Hi, my name is Karl Heitmann. I love to code and to work on software projects.  
+author_bio: Hola, soy Karl Heitmann. Me gusta programar y trabajar en proyectos de software.  
 author_email: "khf1988@gmail.com"
 author_location: Chile
 author_website_url: "https://karlheitmann.github.com"
 
 author_work_experiences: 
-            - company_name: Google
+            - company_name: Resed
               company_logo: google.png
               company_url: https://google.com
               designation: Software Engineer
