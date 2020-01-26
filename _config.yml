@@ -2,9 +2,9 @@ remote_theme: sujaykundu777/devlopr-jekyll  # Don't touch ( required for this th
 
 # Edit your preferences below 
 title: Karl Heitmann
-subtitle: My personal web page
+subtitle: My página personal
 description: >- # this means to ignore newlines until "baseurl:"
-  Karl Heitmann uses devlopr-jekyll - a Jekyll Theme Built For Developers
+  Karl Heitmann utiliza devlopr-jekyll - un Jekyll Theme Built For Developers
 
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -14,12 +14,12 @@ urls:
       url: /diplomas
     - text: Blog
       url: /blog
-    - text: About Me
-      url: /about
-    - text: Contact Me
-      url : /contact
-    - text: Sample Page
-      url: /sample-page
+    # - text: About Me
+    #   url: /about
+    # - text: Contact Me
+    #   url : /contact
+    # - text: Sample Page
+    #   url: /sample-page
 
 # Edit these details 
 
@@ -32,16 +32,15 @@ author_website_url: "https://karlheitmann.github.com"
 
 author_work_experiences: 
             - company_name: Resed
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+              company_logo: resed.png
+              designation: Desarrollador de Aplicaciones Web
+              description: Diseño y construcción de aplicaciones web.
               visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: Ocular
+              company_logo: ocular.png
+              company_url: https://ocularsecurity.com
+              designation: Desarrollador Consultor
+              description: Trabajé haciendo la aplicación web, aplicación móvil, y asesorando al equipo en el desarrollo de la aplicación escrita en python
               visibility: true
 
 author_education_details:
@@ -65,14 +64,14 @@ author_project_details:
                 visibility: true
 
 # social links
-github_username:  johndoe
-telegram_username: johndoe
+github_username:  KarlHeitmann
+telegram_username: Kheitmann
 
 #for comments using disqus
 disqus_shortname: sujay-kundu  
 
 # wakatime username
-wakatime_username: sujaykundu777
+wakatime_username: karlheitmannfrutuoso
 
 # syntax highlighter
 markdown: kramdown
@@ -80,12 +79,12 @@ highlighter: rouge
 permalink: pretty
 
 # google analytics
-google_analytics: UA-46783401-10 
+# google_analytics: UA-46783401-10 
 
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
-show_author_education_details: true
-show_author_project_details: true
+show_author_education_details: false
+show_author_project_details: false
 
 # dont touch this unless required
 plugins:
