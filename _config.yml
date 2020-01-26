@@ -2,7 +2,7 @@ remote_theme: sujaykundu777/devlopr-jekyll  # Don't touch ( required for this th
 
 # Edit your preferences below 
 title: Karl Heitmann
-subtitle: My página personal
+subtitle: Mi página personal
 description: >- # this means to ignore newlines until "baseurl:"
   Karl Heitmann utiliza devlopr-jekyll - un Jekyll Theme Built For Developers
 
@@ -68,10 +68,10 @@ github_username:  KarlHeitmann
 telegram_username: Kheitmann
 
 #for comments using disqus
-disqus_shortname: sujay-kundu  
+# disqus_shortname: sujay-kundu  
 
 # wakatime username
-wakatime_username: karlheitmannfrutuoso
+# wakatime_username: karlheitmannfrutuoso
 
 # syntax highlighter
 markdown: kramdown
