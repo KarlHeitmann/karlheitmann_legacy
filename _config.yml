@@ -1,120 +1,45 @@
-remote_theme: sujaykundu777/devlopr-jekyll  # Don't touch ( required for this theme)
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Edit your preferences below 
-title: Karl Heitmann
-subtitle: Mi página personal
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Karl Heitmann Personal Site
+email: khf1988@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Karl Heitmann utiliza devlopr-jekyll - un Jekyll Theme Built For Developers
-
-url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. https://example.github.io
+  This is my brand new personal site. You will find information about me, my interests
+  what are my skills and much more
 baseurl: "" # the subpath of your site, e.g. /blog
-
-urls:
-    - text: Diplomas
-      url: /diplomas
-    - text: Blog
-      url: /blog
-    # - text: About Me
-    #   url: /about
-    # - text: Contact Me
-    #   url : /contact
-    # - text: Sample Page
-    #   url: /sample-page
-
-# Edit these details 
-
-author_logo: perfil.jpg
-author: Karl Heitmann
-author_bio: Hola, soy Karl Heitmann. Me gusta programar y trabajar en proyectos de software.  
-author_email: "khf1988@gmail.com"
-author_location: Chile
-author_website_url: "https://karlheitmann.github.com"
-
-author_work_experiences: 
-            - company_name: Resed
-              company_logo: resed.png
-              designation: Desarrollador de Aplicaciones Web
-              description: Diseño y construcción de aplicaciones web.
-              visibility: true
-            - company_name: Ocular
-              company_logo: ocular.png
-              company_url: https://ocularsecurity.com
-              designation: Desarrollador Consultor
-              description: Trabajé haciendo la aplicación web, aplicación móvil, y asesorando al equipo en el desarrollo de la aplicación escrita en python
-              visibility: true
-
-author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
-                visibility: true
-
-author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: programmingebooks.png
-                project_title: Programming Ebooks
-                project_description: A Platform to easily find and read programming books
-                project_url: https://programmingebooks.com
-                visibility: true
-
-# social links
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  KarlHeitmann
-telegram_username: Kheitmann
 
-#for comments using disqus
-# disqus_shortname: sujay-kundu  
-
-# wakatime username
-# wakatime_username: karlheitmannfrutuoso
-
-# syntax highlighter
+# Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: pretty
-
-# google analytics
-# google_analytics: UA-46783401-10 
-
-# Choose what to show ( can be true or false)
-show_author_work_experiences: true
-show_author_education_details: false
-show_author_project_details: false
-
-# dont touch this unless required
+theme: minima
 plugins:
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-remote-theme
-  # - jekyll-archives
 
-# pagination of posts
-paginate: 8
-per_page: 4
-paginate_path: "/blog/page/:num/"
+header_pages:
+  - diplomas.md
+  # - about.md
 
-# minify 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: ['development']
-
-# Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
-
-
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

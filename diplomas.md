@@ -1,5 +1,9 @@
 ---
 layout: page
+title: Diplomas
+menus: header
+permalink: /diplomas
+
 ---
 <h1>Diplomas</h1>
 
