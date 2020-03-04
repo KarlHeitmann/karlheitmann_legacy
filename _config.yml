@@ -30,7 +30,15 @@ plugins:
 
 header_pages:
   - diplomas.md
+  - blog.html
+
   # - about.md
+
+urls:
+    - text: Diplomas
+      url: /diplomas
+    - text: Blog
+      url: /blog
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
