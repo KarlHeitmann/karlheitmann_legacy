@@ -25,7 +25,7 @@ tagline: Una página web donde coloco mi curriculum y algunas reflexiones person
 # Build settings
 markdown: kramdown
 theme: minima
-google_analytics: UA-159648129-1
+google_analytics: UA-159664384-1
 
 plugins:
   - jekyll-feed
