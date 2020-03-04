@@ -5,8 +5,6 @@ date: 2019-11-07 1:02:00 -0400
 categories: reflexiones
 ---
 
-# Los Modelos
-
 _"¿Has visto un haz de luz entrar por la ventana de tu habitación? Has observado
 que se suspenden millones de partículas en movimientos brownianos? Si tú tomas
 cualquiera de esas motas y la sometes a un microscopio electrónico de
