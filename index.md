@@ -4,9 +4,9 @@
 # ![image-title-here](/path/to/image.jpg){:class="img-responsive"}
 
 layout: home
+title: Bienvenido a mi página personal
 ---
 
-Bienvenido a mi página personal.
 
 ![foto de perfil](/assets/img/perfil.jpg){:class="img-responsive"}
 
