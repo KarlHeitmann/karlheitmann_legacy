@@ -92,7 +92,10 @@ desde una foto, un tríptico,
 una franja electoral, o un escenario en la calle, que mentir todos
 los días en sus videos o publicaciones de Twitter, Facebook, Instagram o Youtube.
 
-Quizás valga la pena intentarlo.
+Podrían crear una lista de 100 facilitadores que tengan en promedio 10 mil seguidores, conseguir
+100 x 10 mil = un millón de firmas, inscribirla en el congreso y postular.
+
+Quizás valga la pena intentarlo. Y yo me ofrezco para ayudarles.
 
 
 
