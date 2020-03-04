@@ -93,9 +93,10 @@ una franja electoral, o un escenario en la calle, que mentir todos
 los días en sus videos o publicaciones de Twitter, Facebook, Instagram o Youtube.
 
 Podrían crear una lista de 100 facilitadores que tengan en promedio 10 mil seguidores, conseguir
-100 x 10 mil = un millón de firmas, inscribirla en el congreso y postular.
+100 x 10 mil = un millón de firmas, inscribirla en el congreso y postular. No es necesario que
+sea una lista de solamente personas de derecha. Aquí deben participar todos los que amen nuestra república.
 
-Quizás valga la pena intentarlo. Y yo me ofrezco para ayudarles.
+Quizás valga la pena intentarlo.
 
 
 
