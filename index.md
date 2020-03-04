@@ -12,7 +12,6 @@ Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y 
 También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o 
 [pincha aquí](./diplomas.md).
 
-Abajo puedes ver las cosas que escribo en el blog que tengo acá.
+Abajo puedes ver las cosas que escribo en este blog.
 
 ![foto de perfil](/assets/img/perfil.jpg){:class="img-responsive"}
-
