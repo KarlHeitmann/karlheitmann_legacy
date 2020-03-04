@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ensayo Puerto Libertad"
-date: 2020-03-04 1:02:00 -0400
+date: 2020-03-03 1:02:00 -0400
 categories: ensayo
 ---
 
@@ -12,6 +12,8 @@ y el liberalismo.*
 
 Mi ensayo ganó el tercer lugar en el curso, y me gustó mucho como quedó :)
 
-El ensayo lo pueden ver en PDF acá:
+<a href="/assets/pdf/karl-heitmann-puerto-libertad.pdf">El ensayo lo pueden ver en PDF acá mismo</a>
+
+Pinche arriba para ver.
 
 
