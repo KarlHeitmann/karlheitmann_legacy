@@ -8,9 +8,10 @@ title: Bienvenido a mi página personal
 ---
 
 
-![foto de perfil](/assets/img/perfil.jpg){:class="img-responsive"}
-
 Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
 
 También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o 
+
+![foto de perfil](/assets/img/perfil.jpg){:class="img-responsive"}
+
 [pincha aquí](./diplomas.md).
