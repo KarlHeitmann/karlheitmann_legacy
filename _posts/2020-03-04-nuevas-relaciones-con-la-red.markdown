@@ -12,24 +12,30 @@ de bienes públicos, hasta manifestaciones a favor de una nueva constitución y
 otros en contra. -->
 
 Chile está en crisis, y desde el 18-O  que el orden público no se ha podido restablecer.
-Pero las calles no son las únicas que se han movido. La autopista de la información a la
-cual Chile se ha incorporado con fuerza en los últimos 20 años tampoco.
+Pero las calles no son las únicas que se han agitado. La autopista de la información a la
+cual Chile se ha incorporado en los últimos 20 años tampoco.
+
+Un punto que tenemos en común la gente de derechas e izquierdas en medio de esta crisis, es el desprecio
+que tenemos por la casta política.
+Nadie está contento ni con el presidente, ni con los parlamentarios que están en el congreso. Eso lo 
+demuestran las publicaciones en redes sociales, las consignass que se gritan en las calles, y la pésima
+puntuación que alcanzan los políticos en los ranking de las encuentas.
+
+<!-- Pero en política lo que en realidad vale es quien controla la calle: quién está en los colegios,
+en las universidades, en los sindicatos, en las barras bravas, etc. Ahí es donde domina
+la izquierda y la social democracia pero en menor medida. -->
+
+La derecha en Chile no se caracteriza por salir a la calle, en parte porque sus dirigentes se han encargado de
+despolitizar a los cuerpos intermedios desde el retorno a la democracia. Pero si que marca una
+fuerte presencia en las redes sociales, que hace temblar medios como Twitter y Youtube.
 
 Como cualquier otro derechista, yo sigo varios canales de Youtube y cuentas de Twitter.
 Así me informo siguiendo a personas que no tienen cabida en los medios masivos de comunicación,
 pero que ocupan las redes sociales para expresar su opinión y dar un punto de vista que
-no se ve en los diarios, los canales de TV ni en los diarios.
-
-Pero en política lo que en realidad vale es quien controla la calle: quién está en los colegios,
-en las universidades, en los sindicatos, en las barras bravas, etc. Ahí es donde domina
-la izquierda y la social democracia pero en menor medida.
-
-La derecha en Chile no se caracteriza por salir a la calle, en parte porque sus dirigentes se han encargado de
-despolitizar a los cuerpos intermedios desde el retorno a la democracia. Pero si que la
-define su fuerte presencia en las redes sociales caracteriza que hace temblar medios como Twitter y Youtube.
+no se ve en los diarios ni en los canales de TV.
 
 El desafío está en recuperar la calle y sacar a los parlamentarios que no han sido capaces de
-adaptarse a los cambios que está pasando el mundo gracias a Internet. Un regalo más importante que
+acomodarse a los cambios que ha traído Internet. Un regalo más importante que
 el descubrimiento del fuego, o la invención de la rueda. Porque Internet clausura las distancias físicas,
 con paquetes de información audiovisuales viajando a la velocidad de la luz. Parafraseando a Antonio Escohotado.
 
