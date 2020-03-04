@@ -1,13 +1,17 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+# ![image-title-here](/path/to/image.jpg){:class="img-responsive"}
 
-layout: default
+layout: home
+title: Bienvenido a mi página personal
 ---
 
-Bienvenido a mi página personal.
 
 Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
 
 También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o 
+
+![foto de perfil](/assets/img/perfil.jpg){:class="img-responsive"}
+
 [pincha aquí](./diplomas.md).

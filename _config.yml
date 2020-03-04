@@ -21,16 +21,27 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  KarlHeitmann
-
+tagline: Una página web donde coloco mi curriculum y algunas reflexiones personales. Viva el capitalismo.
 # Build settings
 markdown: kramdown
 theme: minima
+google_analytics: UA-159648129-1
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 header_pages:
   - diplomas.md
+  - blog.html
+
   # - about.md
+
+urls:
+    - text: Diplomas
+      url: /diplomas
+    - text: Blog
+      url: /blog
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
