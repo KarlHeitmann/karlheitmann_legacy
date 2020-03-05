@@ -13,7 +13,7 @@ otros en contra. -->
 
 Chile está en crisis, y desde el 18-O que el orden público no se ha podido restablecer.
 Pero las calles no son las únicas que se han agitado. La autopista de la información a la
-cual Chile se ha incorporado en los últimos 20 años tampoco.
+cual Chile se ha incorporado en los últimos 20 años también.
 
 Un punto que tenemos en común la gente de derechas e izquierdas en medio de esta crisis, es el desprecio
 que tenemos por la casta política.
@@ -45,8 +45,8 @@ Durante la marcha, tuve la fortuna de saludar y cruzar algunas palabras con los 
 que sigo y escucho. En estas interacciones ocurrió algo que me llamó la atención,
 y es que era un nuevo tipo de relación el que se está dando.
 
-Estos facilitadores -que no llegan a ser *influencers* por la cantidad moderada de seguidores que tienen- van facilitando
-la información que se mueve por internet. Estos facilitadores se enfocan en ciertos nichos que no son tan populares ni masivos,
+**Estos facilitadores -que no llegan a ser *influencers* por la cantidad moderada de seguidores que tienen- van facilitando
+la información que se mueve por internet**. Estos facilitadores se enfocan en ciertos nichos que no son tan populares ni masivos,
 pero que aun así logran juntar entre mil y diez mil personas como seguidores. Los facilitadores ayudan a difundir mensajes que dicen
 los *influencers*, haciéndolo llegar a personas que por algún motivo no los siguen directamente. Los facilitadores al
 apoyar las marchas, le están diciendo a las personas comunes y corrientes que si va a haber respaldo para las convocatorias que
