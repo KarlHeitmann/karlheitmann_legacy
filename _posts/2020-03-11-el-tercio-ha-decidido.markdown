@@ -8,7 +8,7 @@ comments: true
 
 Chile es un país dividido en tercios: un tercio en cada polo y un tercio en el centro.
 Quizás el testimonio más representativo de esta configuración sea el
-poema épico _La Araucana_ escrito por Alonso de Ercilla en el que se narran los enfrentamientos
+poema épico _La Araucana_, escrito por Alonso de Ercilla en el que se narran los enfrentamientos
 entre españoles y araucanos durante el siglo XVI. Así es la historia de Chile y así es nuestro pueblo.
 
 Desde la independencia de Chile que estas diferencias se manifiestan en quiebres 
@@ -28,16 +28,16 @@ seguía recordando a Allende con nostalgia, otro tercio estaba agradecido de Pin
 del medio era indiferente a estos personajes y querían seguir su vida tranquilamente.
 
 El periodo que comenzó hace 30 años con el retorno a la democracia, se caracterizó
-por el gobierno social demócrata que realizó la Concertación, que gobernó durante dos
+por las medidas sociales demócratas que tomó la Concertación, que gobernó durante dos
 tercios de este periodo. Gracias a las bases que puso Jaime Guzmán en la constitución
 del 80 junto a algunas reformas y medidas que tomó la Concertación en su gobierno, Chile
 pasó a ser el país más próspero de hispanoamérica: superó a todos sus vecinos reduciendo
-la pobreza de prácticamente la mitad a poco menos de un 10%, y siendo el país de hispanoamérica
+la pobreza de la mitad a poco menos de un 10%, y siendo el país de hispanoamérica
 que todos los demás querían imitar.
 
 Las elecciones presidenciales en este periodo fueron muy reñidas entre los candidatos de izquierdas
 y de derechas. En cada campaña presidencial, lo que hicieron cada uno de los bandos siempre fue
-apelar al voto blando: el voto del tercio del centro. Así la concertación logró la mayoría de sus
+apelar al voto blando: el tercio del centro. Así la concertación logró la mayoría de sus
 victorias sobre la derecha.
 
 <!-- Además, la 
@@ -48,9 +48,9 @@ polarizando en Chile. -->
 
 Pero esta estrategia de apelar al tercio del centro que se ha venido realizando desde 1990 hasta las
 últimas elecciones ya no sirve. Porque los hechos acaecidos el 18-O provocaron un terremoto
-político en el país. La prosperidad que se gestó en estos últimos 30 años ha afectado
+político en el país. La prosperidad que se gestó en estos últimos 30 años había afectado
 a todos los ciudadanos honestos que pertenecen a cada uno de los tercios del país, tanto como
-ha afectado los daños causados por la violencia desatada en los últimos cinco meses a estos ciudadanos.
+ha afectado los daños causados por la violencia desatada en los últimos cinco meses a estos mismos ciudadanos.
 
 <!-- Tanto ciudadanos del tercio de izquierdas, como el tercio del centro y el tercio de derechas, han conseguido
 ser los primeros profesionales de sus familias, o han levantado negocios que les han permitido mejorar
@@ -69,7 +69,7 @@ o el de los presos militares, o la ley mordaza, o la ideología de género, o la
 los criminales se vayan presos, que se terminen los saqueos, que la policía pueda capturar a los criminales,
 que los jueces castiguen a quienes lo destruyen todo.
 
-El tercio del centro está claro qué es lo que quiere. Los líderes que busquen consensos no los van a convencer,
+El tercio del centro ya tiene claro qué es lo que quiere. Los líderes que busquen consensos no los van a convencer,
 los líderes timoratos tampoco. Solo un líder que tenga el coraje de poner orden va a tener su apoyo.
 
 Ya no hay voto blando, el tercio del centro ya se ha decidido.
