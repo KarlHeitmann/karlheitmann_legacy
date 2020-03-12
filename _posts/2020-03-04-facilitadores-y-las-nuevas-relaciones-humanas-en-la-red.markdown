@@ -2,6 +2,7 @@
 layout: post
 title: "Los Facilitadores: El nuevo tipo de relación humana"
 date: 2020-03-03 1:02:00 -0400
+comments: true
 categories: [ensayo, politica]
 ---
 
