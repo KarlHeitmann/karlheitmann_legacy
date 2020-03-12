@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "El Tercio Ha Decidido"
-date: 2020-03-03 1:02:00 -0400
+date: 2020-03-11 1:02:00 -0400
 categories: [opinión, politica]
 comments: true
 ---
