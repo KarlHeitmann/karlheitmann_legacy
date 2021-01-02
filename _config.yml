@@ -36,6 +36,7 @@ plugins:
 
 header_pages:
   - diplomas.md
+  - proyectos.md
   - blog.html
 
   # - about.md
@@ -43,6 +44,8 @@ header_pages:
 urls:
     - text: Diplomas
       url: /diplomas
+    - text: Proyectos
+      url: /proyectos
     - text: Blog
       url: /blog
 
