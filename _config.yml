@@ -28,7 +28,7 @@ theme: minima
 google_analytics: UA-159664384-1
 
 minima:
-  skin: dark
+  skin: karl
 
 plugins:
   - jekyll-feed
