@@ -27,9 +27,6 @@ markdown: kramdown
 theme: minima
 google_analytics: UA-159664384-1
 
-skin: dark
-minima:
-  skin: dark
 
 plugins:
   - jekyll-feed
