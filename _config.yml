@@ -27,12 +27,16 @@ markdown: kramdown
 theme: minima
 google_analytics: UA-159664384-1
 
+minima:
+  skin: dark
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 header_pages:
   - diplomas.md
+  - proyectos.md
   - blog.html
 
   # - about.md
@@ -40,6 +44,8 @@ header_pages:
 urls:
     - text: Diplomas
       url: /diplomas
+    - text: Proyectos
+      url: /proyectos
     - text: Blog
       url: /blog
 
