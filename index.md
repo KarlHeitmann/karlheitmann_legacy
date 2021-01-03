@@ -7,11 +7,24 @@ layout: home
 title: Bienvenido al sitio de un artesano del siglo XXI
 ---
 
+<div class="perfil__surround--container">
+  <div class="perfil__surround--container-img">
+    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20190808143838/logsm.png"
+      alt="Longtail boat in Thailand"
+      class="perfil__surround--img">
+  </div>
+
+  <p class="perfil__surround--paragraph">
+    Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
+
+    También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o
+    [pincha aquí](./diplomas.md).
+
+    Abajo puedes ver las cosas que escribo en este blog.
+  </p>
+</div>
 ![foto de perfil](/assets/img/perfil.jpg){:class="img-responsive perfil--main}
-
-%h1
-  Hola
-
 
 Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
 
