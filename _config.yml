@@ -35,6 +35,7 @@ plugins:
   - jekyll-seo-tag
 
 header_pages:
+  - tango/tango.html
   - diplomas/diplomas.md
   - content/proyectos.md
   - blog.html
@@ -42,6 +43,8 @@ header_pages:
   # - about.md
 
 urls:
+    - text: Tango
+      url: /tango/tango.html
     - text: Diplomas
       url: /diplomas/diplomas
     - text: Proyectos
