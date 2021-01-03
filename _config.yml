@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Karl Heitmann Personal Site
+title: Mi lugar en la Red
 email: khf1988@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my brand new personal site. You will find information about me, my interests
