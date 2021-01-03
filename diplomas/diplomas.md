@@ -2,7 +2,7 @@
 layout: page
 title: Diplomas
 menus: header
-permalink: /diplomas
+# permalink: /diplomas
 
 ---
 <p>En <a href="https://platzi.com">Platzi</a> he realizado varios cursos. En esta página están los diplomas de mis cursos aprobados</p>
