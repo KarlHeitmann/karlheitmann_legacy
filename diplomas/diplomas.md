@@ -9,15 +9,15 @@ permalink: /diplomas
 
 <ul>
   <li>
-    <a href="/diploma-android">Android</a>
+    <a href="/diplomas/diploma-android">Android</a>
   </li>
   <li>
-    <a href="/diplomas-carreras">Carreras</a>
+    <a href="/diplomas/diplomas-carreras">Carreras</a>
   </li>
   <li>
-    <a href="/diplomas-javascript">Javascript</a>
+    <a href="/diplomas/diplomas-javascript">Javascript</a>
   </li>
   <li>
-    <a href="/diplomas-miscelaneo">Miscelaneo</a>
+    <a href="/diplomas/diplomas-miscelaneo">Miscelaneo</a>
   </li>
 </ul>

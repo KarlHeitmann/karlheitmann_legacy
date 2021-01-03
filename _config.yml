@@ -35,7 +35,7 @@ plugins:
   - jekyll-seo-tag
 
 header_pages:
-  - diplomas.md
+  - diplomas/diplomas.md
   - proyectos.md
   - blog.html
 
@@ -43,7 +43,7 @@ header_pages:
 
 urls:
     - text: Diplomas
-      url: /diplomas
+      url: /diplomas/diplomas
     - text: Proyectos
       url: /proyectos
     - text: Blog
