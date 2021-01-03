@@ -1,2 +1,22 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+div.perfil__surround--container {
+  margin: 20px;
+  text-align: center;
+}
+
+// h1 {
+//   color: green;
+// }
+
+img.perfil__surround--img {
+  float: left;
+  margin: 5px;
+  width: 25%;
+}
+
+p.perfil__surround--paragraph {
+  text-align: justify;
+  font-size: 25px;
+}

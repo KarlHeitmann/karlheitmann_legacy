@@ -7,11 +7,20 @@ layout: home
 title: Bienvenido al sitio de un artesano del siglo XXI
 ---
 
-Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
+<div class="perfil__surround--container">
+  <div class="perfil__surround--container-img">
+    <img src=
+"/assets/img/perfil.jpg"
+      alt="Longtail boat in Thailand"
+      class="perfil--main perfil__surround--img">
+  </div>
 
-También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o
-[pincha aquí](./diplomas.md).
-
-Abajo puedes ver las cosas que escribo en este blog.
-
-![foto de perfil](/assets/img/perfil.jpg){:class="img-responsive perfil--main"}
+  <p class="perfil__surround--paragraph">
+    Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
+    <br/>
+    También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o
+<a href="/diplomas/diplomas">pincha aquí</a>
+    <br/>
+    Abajo puedes ver las cosas que escribo en este blog.
+  </p>
+</div>
