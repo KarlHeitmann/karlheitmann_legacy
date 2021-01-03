@@ -26,16 +26,21 @@ p.perfil__surround--paragraph {
   margin: 0 3rem;
   display: inline-block;
   &__iframe {
-    width: 45%;
+    width: 65%;
+    height: 400px;
     position: relative;
     float: left;
     margin: 0 2%;
   }
 
   &__texto {
-    width: 45%;
+    width: 25%;
     position: relative;
     float: left;
     margin: 0 2%;
   }
+}
+
+.tango-intro {
+
 }
