@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 # ![image-title-here](/path/to/image.jpg){:class="img-responsive"}
 
-layout: home
+layout: page
 title: Bienvenido al sitio de un artesano del siglo XXI
 ---
 
@@ -21,6 +21,6 @@ title: Bienvenido al sitio de un artesano del siglo XXI
     También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o
 <a href="/diplomas/diplomas">pincha aquí</a>
     <br/>
-    Abajo puedes ver las cosas que escribo en este blog.
+    <!-- Abajo puedes ver las cosas que escribo en este blog. -->
   </p>
 </div>

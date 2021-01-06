@@ -38,7 +38,7 @@ header_pages:
   - tango/tango.html
   - diplomas/diplomas.md
   - content/proyectos.md
-  - blog.html
+  # - blog.html
 
   # - about.md
 
@@ -49,8 +49,8 @@ urls:
       url: /diplomas/diplomas
     - text: Proyectos
       url: /content/proyectos
-    - text: Blog
-      url: /blog
+    # - text: Blog
+    #   url: /blog
 
 disqus:
     # Leave shortname blank to disable comments site-wide.
