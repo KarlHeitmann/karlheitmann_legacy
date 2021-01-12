@@ -6,10 +6,8 @@
 
 @import "layout/navigation";
 
+@import "pages/home";
+
 .home {
   margin: 0 40rem;
-}
-
-.perfil--main {
-  clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
 }
