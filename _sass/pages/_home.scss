@@ -1,19 +1,19 @@
-// .perfil {
-//   &__surround {
-//     &--container {
-//       width: 100vw;
-//     }
+.perfil {
+  // &__surround {
+    // &--container {
+    //   width: 100vw;
+    // }
 
-//     &--img {
-//       max-width: 25vw;
-//     }
+    // &--img {
+    //   max-width: 25vw;
+    // }
 
-//   }
+  // }
 
-//   &--main {
-//     clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
-//   }
-// }
+  &--main {
+    clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
+  }
+}
 
 div.perfil__surround--container {
   margin: 20px;
