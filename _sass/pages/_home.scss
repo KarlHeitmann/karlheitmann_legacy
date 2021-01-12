@@ -1,17 +1,18 @@
 .perfil {
-  &--main {
-    clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
-  }
 
   &__surround {
     &--container {
-      margin: 20px;
+      margin: 4rem 20rem;
+      padding: 2rem 6rem;
       text-align: center;
+      background-color: $color-grey-light-2
     }
 
     &--img {
       float: left;
+      clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
       margin: 5px;
+      width:25%;
     }
 
     &--paragraph {
