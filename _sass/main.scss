@@ -1,23 +1,14 @@
-.container-main {
-  display: flex;
-  flex-direction: column;
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+
+@import "layout/navigation";
+
+.home {
+  margin: 0 40rem;
 }
-
-.site-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  &--pages {
-    display: flex;
-    justify-content: space-between;
-  }
-  &--link {
-    margin: 0 20px;
-    text-decoration: none;
-  }
-}
-
 
 .perfil--main {
   clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);

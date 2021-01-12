@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /*
+  1. Calculamos todos los rem con la medida de font-size: 10px
+  2. Si el usuario no cambia la root-font-size, y se usa 100%, font-size sería 16px.
+  Como queremos que para los calculos de rem sea font-size 10 px y no 16px, para que nos de las medidas correctas, entonces aplicamos:
+  10/16 = 0.625. Asi que se pone font-size: 62.5% para que la fuente de 100% se reduzca a 62.5%, y con eso las otras medidas calcen con el calculo
+  que habiamos hecho de font-size: 10px;
+  */
+  font-size: 62.5%;
+
+  @include respond(tab-land) { // width < 1200 ?
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) { // width  < 900 ?
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1 rem = 12, 12/16=75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
