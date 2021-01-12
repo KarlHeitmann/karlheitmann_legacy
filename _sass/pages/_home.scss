@@ -1,35 +1,22 @@
 .perfil {
-  // &__surround {
-    // &--container {
-    //   width: 100vw;
-    // }
-
-    // &--img {
-    //   max-width: 25vw;
-    // }
-
-  // }
-
   &--main {
     clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
   }
-}
 
-div.perfil__surround--container {
-  margin: 20px;
-  text-align: center;
-}
+  &__surround {
+    &--container {
+      margin: 20px;
+      text-align: center;
+    }
 
-// h1 {
-//   color: green;
-// }
+    &--img {
+      float: left;
+      margin: 5px;
+    }
 
-img.perfil__surround--img {
-  float: left;
-  margin: 5px;
-}
-
-p.perfil__surround--paragraph {
-  text-align: justify;
-  font-size: 25px;
+    &--paragraph {
+      text-align: justify;
+      font-size: 25px;
+    }
+  }
 }
