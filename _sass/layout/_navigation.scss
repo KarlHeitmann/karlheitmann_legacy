@@ -18,11 +18,40 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__item {
+    list-style: none;
+    display: flex;
+    position: relative;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-primary);
+    // transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform .2s,
+                width .4s cubic-bezier(1, .01, 0, 1) .2s,
+                background-color .1s;
+  }
+
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
   &--link:link,
   &--link:visited {
     margin: 0 20px;
     text-decoration: none;
     color: var(--color-grey-light-1);
+    z-index: 10;
   }
 }
 
