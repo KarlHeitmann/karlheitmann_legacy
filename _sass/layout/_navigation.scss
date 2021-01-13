@@ -7,14 +7,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: var(--color-grey-light-1);
+  // color: var(--color-grey-light-1);
+
+  // background-color: var(--color-primary-light-2);
+  background-color: var(--color-primary-dark-2);
+  // background-color: var(--color-primary);
 
   &--pages {
     display: flex;
     justify-content: space-between;
   }
-  &--link {
+  &--link:link,
+  &--link:visited {
     margin: 0 20px;
     text-decoration: none;
+    color: var(--color-grey-light-1);
   }
 }
 
