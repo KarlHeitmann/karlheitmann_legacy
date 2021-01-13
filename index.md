@@ -5,7 +5,7 @@
 
 layout: page
 title: Bienvenido al sitio de un artesano del siglo XXI
-subtitle: Karl Hetmann
+subtitle: Karl Heitmann
 
 ---
 
