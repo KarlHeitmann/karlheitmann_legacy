@@ -2,10 +2,12 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@font-face {
+  font-family: 'AnticDidone';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100;
+  src: url(../fonts/AnticDidone-Regular.ttf) format('truetype');
+}
+
 @import "main";
-
-// @import
-//   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-//   "minima/initialize";
-
-
