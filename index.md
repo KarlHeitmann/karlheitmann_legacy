@@ -5,8 +5,14 @@
 
 layout: page
 title: Bienvenido al sitio de un artesano del siglo XXI
+subtitle: Karl Hetmann
+
 ---
 
+<h1 class="heading-primary">
+  <span class="heading-primary--main">{{page.title}}</span>
+  <span class="heading-primary--sub">{{page.subtitle}}</span>
+</h1>
 <div class="perfil__surround--container">
   <div class="perfil__surround--container-img">
     <img src=
