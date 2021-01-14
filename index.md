@@ -26,6 +26,18 @@ subtitle: Karl Heitmann
     Soy ingeniero electrónico por profesión, pero programador por oficio, y me desempeño actualmente como freelancer.
   </p>
   <p class="perfil__surround--paragraph">
+    Tengo un profundo interés por aprender cualquier cosa que esté fuera de mi ombligo. Las áreas que más me llaman la atención -además de la programación- son la física, la historia, la música y la filosofía.
+  </p>
+
+  <p class="perfil__surround--paragraph">
+    Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
+  </p>
+  <p class="perfil__surround--paragraph">
+    También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o
+    <a href="/diplomas/diplomas">pincha aquí</a>
+    <!-- Abajo puedes ver las cosas que escribo en este blog. -->
+  </p>
+  <p class="perfil__surround--paragraph">
     Me gusta referirme a mi oficio como el de un artesano del siglo XXI porque de eso se trata: realizar un trabajo artesanal. Usted, estimado visitante, me imagino que nunca habrá visto una fábrica de software, ¿no es cierto?
   </p>
   <p class="perfil__surround--paragraph">
@@ -48,15 +60,5 @@ subtitle: Karl Heitmann
   </p>
   <p class="perfil__surround--paragraph">
     podríamos decir que observar un programa es bastante similar a observar un fractal: el programa se inventa a si mismo. Es un reciclado de cadáveres que se ocupa para renovarse -como diría Antonio Escohotado- . Por lo tanto, es imposible crear una predicción de como se va a comportar el software que estamos desarrollando. El software se debe ir adaptando y renovando a medida que la realidad se lo pida. Es un trabajo de artesanía, y no un trabajo que uno le puede pedir a la máquina que repita en un bucle infinito
-  </p>
-  <p class="perfil__surround--paragraph">
-    Tengo un profundo interés por aprender cualquier cosa que esté fuera de mi ombligo. Entre todo esto
-    Soy Karl Heitmann, nací en Viña del Mar, Chile el
-    Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
-    <br/>
-    También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o
-    <a href="/diplomas/diplomas">pincha aquí</a>
-    <br/>
-    <!-- Abajo puedes ver las cosas que escribo en este blog. -->
   </p>
 </div>
