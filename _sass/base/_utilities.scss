@@ -16,5 +16,20 @@
   }
 }
 
-.u-margin-top-big { margin-top: 8rem !important; }
-.u-margin-top-huge { margin-top: 10rem !important; }
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 3rem !important;
+  }
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+  @include respond(tab-port) {
+    margin-rop: 5rem !important;
+  }
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
