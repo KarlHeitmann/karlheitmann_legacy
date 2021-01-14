@@ -9,7 +9,7 @@ subtitle: Karl Heitmann
 
 ---
 
-<h1 class="heading-primary">
+<h1 class="heading-primary u-center-text">
   <span class="heading-primary--main">{{page.title}}</span>
   <span class="heading-primary--sub">{{page.subtitle}}</span>
 </h1>
@@ -28,15 +28,11 @@ subtitle: Karl Heitmann
   <p class="perfil__surround--paragraph">
     Tengo un profundo interés por aprender cualquier cosa que esté fuera de mi ombligo. Las áreas que más me llaman la atención -además de la programación- son la física, la historia, la música y la filosofía.
   </p>
-
-  <p class="perfil__surround--paragraph">
-    Aquí hago experimentos y pruebas para ejercitarme en esto del desarrollo web y la redacción.
-  </p>
-  <p class="perfil__surround--paragraph">
-    También tengo una vitrina donde exhibo mis diplomas virtuales. Sigue el link en la esquina superior derecha o
-    <a href="/diplomas/diplomas">pincha aquí</a>
-    <!-- Abajo puedes ver las cosas que escribo en este blog. -->
-  </p>
+  <div class="u-center-text u-margin-bottom-big">
+      <h2 class="heading-secondary">
+        ¿Artesanía?
+      </h2>
+  </div>
   <p class="perfil__surround--paragraph">
     Me gusta referirme a mi oficio como el de un artesano del siglo XXI porque de eso se trata: realizar un trabajo artesanal. Usted, estimado visitante, me imagino que nunca habrá visto una fábrica de software, ¿no es cierto?
   </p>
