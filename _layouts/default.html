@@ -9,7 +9,10 @@
       {%- include header_simple.html -%}
 
       <main class="page-content" aria-label="Content">
-        <h1>soy default</h1>
+        <h1 class="heading-primary u-center-text">
+          <span class="heading-primary--main">{{page.title}}</span>
+          <span class="heading-primary--sub">{{page.subtitle}}</span>
+        </h1>
         <div class="wrapper">
           {{ content }}
         </div>

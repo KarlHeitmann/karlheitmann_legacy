@@ -9,10 +9,6 @@ subtitle: Karl Heitmann
 
 ---
 
-<h1 class="heading-primary u-center-text">
-  <span class="heading-primary--main">{{page.title}}</span>
-  <span class="heading-primary--sub">{{page.subtitle}}</span>
-</h1>
 <div class="perfil__surround--container">
   <p class="perfil__surround--paragraph">
     <img src="/assets/img/perfil.jpg"
