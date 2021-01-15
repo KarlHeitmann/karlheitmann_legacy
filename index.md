@@ -30,7 +30,8 @@ subtitle: Karl Heitmann
         ¿Artesanía?
       </h2>
   </div>
-  <div class="img-vuelta">
+
+  <!-- <div class="img-vuelta">
     <div class="img-vuelta__side img-vuelta__side--front">
         <div class="img-vuelta__picture img-vuelta__picture--front">
             &nbsp;
@@ -41,8 +42,8 @@ subtitle: Karl Heitmann
             &nbsp;
         </div>
     </div>
-</div>
-  <br>
+  </div>
+  <br> -->
   <p class="perfil__surround--paragraph">
     Me gusta referirme a mi oficio como el de un artesano del siglo XXI porque de eso se trata: realizar un trabajo artesanal. Usted, estimado visitante, me imagino que nunca habrá visto una fábrica de software, ¿no es cierto?
   </p>
