@@ -1,9 +1,6 @@
-.container-main {
-  display: flex;
-  flex-direction: column;
-}
-
 .site-nav {
+  grid-row: 1 / 2;
+  grid-column: sidebar-start / full-end;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
