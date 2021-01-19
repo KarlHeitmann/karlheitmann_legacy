@@ -1,6 +1,6 @@
 .site-nav {
   grid-row: 1 / 2;
-  grid-column: sidebar-start / full-end;
+  grid-column: init-vp / end-vp;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

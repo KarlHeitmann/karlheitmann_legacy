@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 # ![image-title-here](/path/to/image.jpg){:class="img-responsive"}
 
-layout: page
+layout: fullwidth
 title: Bienvenido al sitio de un artesano del siglo XXI
 subtitle: Karl Heitmann
 
