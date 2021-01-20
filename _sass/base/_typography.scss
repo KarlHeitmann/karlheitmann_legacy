@@ -14,6 +14,7 @@ body {
 .heading-primary {
   color: var(--color-secondary);
   // color: var(--color-grey-dark-3);
+  font-family: $font-display;
   text-transform: uppercase;
   // background-color: var(--color-secondary-light-2);
   background-color: var(--color-grey-light-2);
@@ -25,7 +26,7 @@ body {
   &--main {
     display: block;
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 2.0rem;
 
     animation-name: fadeIn;
@@ -41,8 +42,8 @@ body {
 
   &--sub {
     display:block;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 400;
     letter-spacing: 1.25rem;
     animation: moveInBottom 1s ease-out;
 
@@ -59,6 +60,7 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
+  font-family: $font-display;
   font-weight: 700;
   display: inline-block;
   // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);

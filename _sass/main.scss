@@ -6,12 +6,23 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/img_vuelta.scss";
+
+@import "layout/footer";
+@import "layout/grid";
 @import "layout/navigation";
+@import "layout/pagem";
+@import "layout/sidebar";
 
 @import "pages/home";
+@import "pages/tango";
 
 body {
-  font-family: 'AnticDidone';
+  // font-family: 'AnticDidone';
+  // font-family: 'Neuton';
+  font-family: $font-primary;
+  // font-weight: 400;
+  font-weight: 700;
 }
 
 .home {

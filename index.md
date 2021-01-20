@@ -3,16 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 # ![image-title-here](/path/to/image.jpg){:class="img-responsive"}
 
-layout: page
+layout: fullwidth
 title: Bienvenido al sitio de un artesano del siglo XXI
 subtitle: Karl Heitmann
 
 ---
 
-<h1 class="heading-primary u-center-text">
-  <span class="heading-primary--main">{{page.title}}</span>
-  <span class="heading-primary--sub">{{page.subtitle}}</span>
-</h1>
 <div class="perfil__surround--container">
   <p class="perfil__surround--paragraph">
     <img src="/assets/img/perfil.jpg"
@@ -21,6 +17,7 @@ subtitle: Karl Heitmann
     Hola, soy Karl Heitmann. Nací en la ciudad de Viña del Mar, Chile, el 4 de julio de 1988.
     Soy ingeniero electrónico por profesión, pero programador por oficio, y me desempeño actualmente como freelancer.
   </p>
+
   <p class="perfil__surround--paragraph">
     Tengo un profundo interés por aprender cualquier cosa que esté fuera de mi ombligo. Las áreas que más me llaman la atención -además de la programación- son la física, la historia, la música y la filosofía.
   </p>
@@ -29,6 +26,20 @@ subtitle: Karl Heitmann
         ¿Artesanía?
       </h2>
   </div>
+
+  <!-- <div class="img-vuelta">
+    <div class="img-vuelta__side img-vuelta__side--front">
+        <div class="img-vuelta__picture img-vuelta__picture--front">
+            &nbsp;
+        </div>
+    </div>
+    <div class="img-vuelta__side img-vuelta__side--back img-vuelta__side--back-2">
+        <div class="img-vuelta__picture img-vuelta__picture--back">
+            &nbsp;
+        </div>
+    </div>
+  </div>
+  <br> -->
   <p class="perfil__surround--paragraph">
     Me gusta referirme a mi oficio como el de un artesano del siglo XXI porque de eso se trata: realizar un trabajo artesanal. Usted, estimado visitante, me imagino que nunca habrá visto una fábrica de software, ¿no es cierto?
   </p>

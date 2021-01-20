@@ -5,10 +5,16 @@
 
   <body>
 
-    <div class="container-main">
+    <div class="container">
       {%- include header_simple.html -%}
 
-      <main class="page-content" aria-label="Content">
+      <div class="sidebar"></div>
+
+      <main class="pagem" aria-label="Content">
+        <h1 class="heading-primary u-center-text">
+          <span class="heading-primary--main">{{page.title}}</span>
+          <span class="heading-primary--sub">{{page.subtitle}}</span>
+        </h1>
         <div class="wrapper">
           {{ content }}
         </div>
