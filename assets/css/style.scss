@@ -2,6 +2,124 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+/*
+@font-face {
+  font-family: 'Neuton';
+  // font-style: normal;
+  // font-weight: 400;
+  // font-stretch: 100;
+  src: url(../fonts/Neuton-Regular.ttf) format('truetype');
+}
+*/
+/*
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  // font-style: normal;
+  // font-weight: 400;
+  // font-stretch: 100;
+  src: url(../fonts/Neuton-Bold.ttf) format('truetype');
+}
+*/
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Neuton-Italic.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Neuton-Italic.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/Neuton-ExtraLight.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/Neuton-ExtraLight.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Neuton-Light.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Neuton-Light.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Neuton-Regular.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Neuton-Regular.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Neuton-Bold.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Neuton-Bold.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/Neuton-ExtraBold.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/Neuton-ExtraBold.ttf) format('truetype');
+}
+
 @font-face {
   font-family: 'AnticDidone';
   // font-style: normal;
