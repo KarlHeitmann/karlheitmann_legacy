@@ -4,7 +4,7 @@
 # ![image-title-here](/path/to/image.jpg){:class="img-responsive"}
 
 layout: fullwidth
-title: Bienvenido al sitio de un artesano del siglo XXI
+title: Inicio
 subtitle: Karl Heitmann
 
 ---
