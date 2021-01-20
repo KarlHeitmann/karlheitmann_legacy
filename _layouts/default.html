@@ -8,7 +8,13 @@
     <div class="container">
       {%- include header_simple.html -%}
 
-      <div class="sidebar"></div>
+      <div class="sidebar">
+
+        <!-- {- include {{page.sidebar}} -} -->
+        {% if page.sidebar %}
+          {% include {{page.sidebar}} %}
+        {% endif %}
+      </div>
 
       <main class="pagem" aria-label="Content">
         <h1 class="heading-primary u-center-text">
