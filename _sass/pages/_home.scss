@@ -1,0 +1,29 @@
+.perfil {
+
+  &__surround {
+    &--container {
+      margin: 4rem 20rem;
+      padding: 2rem 6rem;
+      // text-align: center;
+      background-color: $color-grey-light-2;
+
+      & ul {
+        text-align: left;
+        margin-left: 3rem;
+        font-size: 2rem;
+      }
+    }
+
+    &--img {
+      float: left;
+      clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
+      margin: 5px;
+      width:25%;
+    }
+
+    &--paragraph {
+      text-align: justify;
+      font-size: 2rem;
+    }
+  }
+}

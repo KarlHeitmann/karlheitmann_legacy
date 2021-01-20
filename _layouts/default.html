@@ -5,15 +5,23 @@
 
   <body>
 
-    {%- include header.html -%}
+    <div class="container">
+      {%- include header_simple.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+      <div class="sidebar"></div>
 
-    {%- include footer.html -%}
+      <main class="pagem" aria-label="Content">
+        <h1 class="heading-primary u-center-text">
+          <span class="heading-primary--main">{{page.title}}</span>
+          <span class="heading-primary--sub">{{page.subtitle}}</span>
+        </h1>
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+
+      {%- include footer.html -%}
+    </div>
 
   </body>
 
