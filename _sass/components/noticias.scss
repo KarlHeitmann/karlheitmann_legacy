@@ -38,10 +38,7 @@
   }
 }
 
-.noticia {
-  grid-column: 2 / 3;
-}
-.is-visible {
+.noticias__btn--barras {
   transition: all .2s;
   background: transparent;
   // color: grass-color ;
@@ -65,4 +62,8 @@
     bottom: 0;
     right: 0;
   }
+}
+
+.noticia {
+  grid-column: 2 / 3;
 }

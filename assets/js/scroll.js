@@ -27,9 +27,9 @@ function loop() {
 
   elementsToShow.forEach(function (element) {
     if (isElementInViewport(element)) {
-      element.classList.add('is-visible');
+      element.classList.add('noticias__btn--barras');
     } else {
-      element.classList.remove('is-visible');
+      element.classList.remove('noticias__btn--barras');
     }
   });
 
