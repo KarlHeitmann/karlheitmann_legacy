@@ -9,6 +9,46 @@
     justify-self: center;
     align-self: center;
   }
+
+  &__btn {
+    position: relative;
+    & button {
+      // color: grass-bg;
+      color: blue;
+      background: crimson;
+      border: none;
+      -webkit-transition: all .7s ease;
+      transition: all .7s ease;
+      &:hover {
+        background: transparent;
+        // color: grass-color ;
+        color: yellow;
+        &:before,
+        &:after {
+          -webkit-transition: all .7s ease;
+          transition: all .7s ease;
+          width: 100%
+        }
+      }
+      &:before,
+      &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 0px;
+        height: 3px;
+        background: violet ;
+        transition: all .4s ease;
+      }
+      &:after {
+        top: inherit;
+        left: inherit;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
 }
 
 .noticia {
