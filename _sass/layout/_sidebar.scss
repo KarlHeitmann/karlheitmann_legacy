@@ -32,8 +32,23 @@
     text-decoration: none;
     color: inherit
   }
+
+  & * {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  &:hover {
+    width: 50rem;
+    padding: 5rem 3rem;
+  }
+
+  &:hover * {
+    opacity: 1;
+  }
 }
 
+/*
 .sidebar * {
   opacity: 0;
   transition: 1s;
@@ -47,4 +62,5 @@
 .sidebar:hover * {
   opacity: 1;
 }
+*/
 
