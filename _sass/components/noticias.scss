@@ -15,10 +15,11 @@
     justify-self: center;
     align-self: center;
     position: relative;
-    & button {
+    & h1 {
       // color: grass-bg;
-      color: blue;
-      background: crimson;
+      font-family: $font-display;
+      color: var(--color-secondary-light-2);
+      // background: crimson;
       border: none;
       -webkit-transition: all .7s ease;
       transition: all .7s ease;
