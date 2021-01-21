@@ -24,20 +24,18 @@ github_username:  KarlHeitmann
 tagline: Una página web donde coloco mi curriculum y algunas reflexiones personales. Viva el capitalismo.
 # Build settings
 markdown: kramdown
-theme: minima
 google_analytics: UA-159664384-1
-
-minima:
-  skin: karl
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 header_pages:
-  - tango/tango.html
-  - diplomas/diplomas.md
-  - content/proyectos.md
+  - sections/estudios.html
+  - sections/artes.html
+  - sections/reflexiones.html
+  - sections/proyectos.html
+  - sections/personal.html
   # - blog.html
 
   # - about.md

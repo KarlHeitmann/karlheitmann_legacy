@@ -1,0 +1,31 @@
+.perfil {
+
+  padding: 10rem;
+
+  display: grid;
+  // grid-template-columns: min-content max-content;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+
+  &__img {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    // float: left;
+    clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    object-position: 90% 0;
+    display: block;
+  }
+
+  &__paragraph {
+    text-align: justify;
+    font-size: 2rem;
+    &--1 {
+      align-self: end;
+    }
+  }
+}
+

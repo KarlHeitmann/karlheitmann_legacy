@@ -2,11 +2,203 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
-
-.perfil--main {
-  clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
+/*
+@font-face {
+  font-family: 'Neuton';
+  // font-style: normal;
+  // font-weight: 400;
+  // font-stretch: 100;
+  src: url(../fonts/Neuton-Regular.ttf) format('truetype');
+}
+*/
+/*
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  // font-style: normal;
+  // font-weight: 400;
+  // font-stretch: 100;
+  src: url(../fonts/Neuton-Bold.ttf) format('truetype');
+}
+*/
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Neuton-Italic.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Neuton-Italic.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/Neuton-ExtraLight.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/Neuton-ExtraLight.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Neuton-Light.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Neuton-Light.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Neuton-Regular.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Neuton-Regular.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Neuton-Bold.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Neuton-Bold.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/Neuton-ExtraBold.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Neuton';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/Neuton-ExtraBold.ttf) format('truetype');
 }
 
+/* latin-ext */
+@font-face {
+  font-family: 'Thasadith';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/thasadith/Thasadith-Italic.ttf);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Thasadith';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/thasadith/Thasadith-Italic.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Thasadith';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/thasadith/Thasadith-BoldItalic.ttf);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Thasadith';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/thasadith/Thasadith-BoldItalic.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Thasadith';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/thasadith/Thasadith-Regular.ttf);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Thasadith';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/thasadith/Thasadith-Regular.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Thasadith';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/thasadith/Thasadith-Bold.ttf);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Thasadith';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/thasadith/Thasadith-Bold.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'AnticDidone';
+  // font-style: normal;
+  // font-weight: 400;
+  // font-stretch: 100;
+  src: url(../fonts/AnticDidone-Regular.ttf) format('truetype');
+}
+
+@import "main";
