@@ -5,4 +5,11 @@
   background-color: var(--color-secondary-dark-1);
   color: var(--color-grey-light-1);
   overflow:hidden;
+
+  & ul li a:link,
+  & ul li a:visited {
+    list-style: none;
+    text-decoration: none;
+    color: inherit
+  }
 }
