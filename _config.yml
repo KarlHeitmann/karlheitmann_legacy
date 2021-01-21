@@ -31,10 +31,11 @@ plugins:
   - jekyll-seo-tag
 
 header_pages:
-  - tango/tango.html
-  - sections/arte.html
-  - diplomas/diplomas.md
-  - content/proyectos.md
+  - sections/estudios.html
+  - sections/artes.html
+  - sections/reflexiones.html
+  - sections/proyectos.html
+  - sections/personal.html
   # - blog.html
 
   # - about.md

@@ -1,4 +1,8 @@
 .pagem {
   grid-row: 2 / -2;
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
+
+  display: flex;
+  position: relative;
+
 }

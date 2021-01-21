@@ -1,4 +1,14 @@
-.perfil {
+.personal {
+
+  &__list {
+    font-size: 2rem;
+    // ul {
+    list-style:none;
+    text-align: left;
+    margin-left: 3rem;
+    font-size: 2rem;
+    // }
+  }
 
   &__surround {
     &--container {
@@ -7,11 +17,6 @@
       // text-align: center;
       background-color: $color-grey-light-2;
 
-      & ul {
-        text-align: left;
-        margin-left: 3rem;
-        font-size: 2rem;
-      }
     }
 
     &--img {

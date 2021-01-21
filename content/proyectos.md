@@ -2,7 +2,7 @@
 layout: page
 title: Mis Proyectos
 menus: header
-permalink: /proyectos
+permalink: /proyectos/general
 ---
 
 Aquí están los proyectos públicos que tengo. Los iré acumulando en esta lista.
