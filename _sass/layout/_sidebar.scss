@@ -19,9 +19,19 @@
 .sidebar {
   // background: #ca0;
   background-color: var(--color-secondary-dark-1);
+  color: var(--color-grey-light-1);
   overflow: hidden;
-  width: 2rem;
+  width: 20rem;
   transition: 1s;
+
+  & ul {
+    list-style: none;
+  }
+  & ul li a:link,
+  & ul li a:visited {
+    text-decoration: none;
+    color: inherit
+  }
 }
 
 .sidebar * {
@@ -30,7 +40,7 @@
 }
 
 .sidebar:hover {
-  width: 15rem;
+  width: 50rem;
   padding: 5rem 3rem;
 }
 
