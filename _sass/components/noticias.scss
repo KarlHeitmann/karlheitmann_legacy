@@ -11,46 +11,46 @@
   }
 
   &__btn {
+    text-align: center;
+
     grid-column: 1 / -1;
-    justify-self: center;
+    justify-self: stretch;
     align-self: center;
     position: relative;
-    & h1 {
-      // color: grass-bg;
-      font-family: $font-display;
+    // color: grass-bg;
+    font-family: $font-display;
+    color: var(--color-secondary-light-1);
+    // background: crimson;
+    border: none;
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+    &:hover {
+      background: transparent;
+      // color: grass-color ;
       color: var(--color-secondary-light-2);
-      // background: crimson;
-      border: none;
-      -webkit-transition: all .7s ease;
-      transition: all .7s ease;
-      &:hover {
-        background: transparent;
-        // color: grass-color ;
-        color: yellow;
-        &:before,
-        &:after {
-          -webkit-transition: all .7s ease;
-          transition: all .7s ease;
-          width: 100%
-        }
-      }
       &:before,
-      &:after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0px;
-        width: 0px;
-        height: 3px;
-        background: violet ;
-        transition: all .4s ease;
-      }
       &:after {
-        top: inherit;
-        left: inherit;
-        bottom: 0;
-        right: 0;
+        -webkit-transition: all .7s ease;
+        transition: all .7s ease;
+        width: 100%
       }
+    }
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 0px;
+      height: 3px;
+      background: var(--color-secondary-light-2) ;
+      transition: all .4s ease;
+    }
+    &:after {
+      top: inherit;
+      left: inherit;
+      bottom: 0;
+      right: 0;
     }
   }
 }
