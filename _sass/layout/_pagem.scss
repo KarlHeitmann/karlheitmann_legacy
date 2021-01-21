@@ -1,4 +1,6 @@
 .pagem {
   grid-row: 2 / -2;
-  grid-column: center-start / center-end;
+  grid-column: sidebar-start / center-end;
+
+  display: flex;
 }

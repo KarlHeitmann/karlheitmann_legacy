@@ -1,3 +1,4 @@
+/*
 .sidebar {
   grid-row: 2 / -2;
   grid-column: sidebar-start / sidebar-end;
@@ -13,3 +14,27 @@
     color: inherit
   }
 }
+*/
+
+.sidebar {
+  // background: #ca0;
+  background-color: var(--color-secondary-dark-1);
+  overflow: hidden;
+  width: 2rem;
+  transition: 1s;
+}
+
+.sidebar * {
+  opacity: 0;
+  transition: 1s;
+}
+
+.sidebar:hover {
+  width: 15rem;
+  padding: 5rem 3rem;
+}
+
+.sidebar:hover * {
+  opacity: 1;
+}
+

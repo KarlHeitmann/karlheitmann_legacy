@@ -8,15 +8,13 @@
     <div class="container">
       {%- include header_simple.html -%}
 
-      <div class="sidebar">
-
-        <!-- {- include {{page.sidebar}} -} -->
-        {% if page.sidebar %}
-          {% include {{page.sidebar}} %}
-        {% endif %}
-      </div>
-
       <main class="pagem" aria-label="Content">
+        <div class="sidebar">
+          <!-- {- include {{page.sidebar}} -} -->
+          {% if page.sidebar %}
+            {% include {{page.sidebar}} %}
+          {% endif %}
+        </div>
         <h1 class="heading-primary u-center-text">
           <span class="heading-primary--main">{{page.title}}</span>
           <span class="heading-primary--sub">{{page.subtitle}}</span>
