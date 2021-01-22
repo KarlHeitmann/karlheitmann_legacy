@@ -7,9 +7,9 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  // @include respond(tab-port) {
-  //   grid-template-rows: 300rem;
-  // }
+  @include respond(tab-port) {
+    grid-template-rows: 30rem;
+  }
 
   &__img {
     grid-row: 1 / -1;
