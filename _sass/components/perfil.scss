@@ -9,6 +9,7 @@
   grid-gap: 2rem;
   @include respond(tab-port) {
     grid-template-rows: 30rem;
+    grid-template-columns: 1fr;
   }
 
   &__img {
