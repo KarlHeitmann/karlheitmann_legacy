@@ -11,6 +11,9 @@
   &__img {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
+    @include respond(tab-port) {
+      grid-column: 1 / -1;
+    }
     // float: left;
     clip-path: polygon(0 25%, 75% 0%, 100% 5%, 100% 100%, 0% 95%);
     height: 100%;
