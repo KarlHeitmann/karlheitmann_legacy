@@ -13,7 +13,7 @@
   &__subheading {
     grid-column: 2 / -2;
     grid-row: 2 / 3;
-    color: var(--color-grey-light-2);
+    color: var(--color-grey-dark-3);
     font-size: 3rem;
     justify-content: center;
   }
@@ -84,12 +84,17 @@
   }
 
   &__heading {
-    grid-column: 1/-1;
+    grid-column: 2 /-1;
+    font-family: $font-display;
     align-self: center;
   }
 
   &__paragraph {
     grid-column: 1/4;
+  }
+
+  &__figure {
+    grid-row: 1 / -1;
   }
   &__img {
     width: 100%;
