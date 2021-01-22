@@ -75,8 +75,17 @@
 .noticia {
   grid-column: 2 / -2;
   display: grid;
+  // grid-template-columns: repeat(8, 1fr);
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+
+  & > a {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    justify-self: center;
+    align-self: center;
+  }
 
   & a:link,
   & a:visited {
@@ -84,13 +93,18 @@
   }
 
   &__heading {
-    grid-column: 2 /-1;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+
     font-family: $font-display;
+    color: var(--color-tertiary-light-2);
     align-self: center;
   }
 
   &__paragraph {
-    grid-column: 1/4;
+    grid-column: 2 / 4;
   }
 
   &__figure {
