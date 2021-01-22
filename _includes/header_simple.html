@@ -14,11 +14,23 @@
 
   <nav class="navigation-mobile__nav">
     <ul class="navigation-mobile__list">
-      <li class="navigation-mobile__item"><a href="#" class="navigation-mobile__link"><span>01</span>About Natours</a></li>
-      <li class="navigation-mobile__item"><a href="#" class="navigation-mobile__link"><span>02</span>Your benefits</a></li>
-      <li class="navigation-mobile__item"><a href="#" class="navigation-mobile__link"><span>03</span>Popular tours</a></li>
-      <li class="navigation-mobile__item"><a href="#" class="navigation-mobile__link"><span>04</span>Stories</a></li>
-      <li class="navigation-mobile__item"><a href="#" class="navigation-mobile__link"><span>05</span>Book now</a></li>
+      <li class="navigation-mobile__item"><a href="/" class="navigation-mobile__link">Inicio</a></li>
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        {% if page.url == my_page.url %}
+        <li class="navigation-mobile__item"><a href="{{ my_page.url | relative_url }}" class="navigation-mobile__link">{{my_page.title | escape}}</a></li>
+        <!-- <li class="site-nav__item site-nav__item--active">
+          <a class="site-nav--link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li> -->
+        {% else %}
+        <li class="navigation-mobile__item"><a href="{{ my_page.url | relative_url }}" class="navigation-mobile__link">{{my_page.title | escape}}</a></li>
+        <!-- <li class="site-nav__item">
+          <a class="site-nav--link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li> -->
+        {% endif %}
+        {%- endif -%}
+      {%- endfor -%}
     </ul>
   </nav>
 </div>

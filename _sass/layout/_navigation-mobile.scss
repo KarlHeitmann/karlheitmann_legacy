@@ -89,7 +89,7 @@
     &:visited {
       display: inline-block;
       font-size: 3rem;
-      font-weight: 300;
+      font-weight: 700;
       padding: 1rem 2rem;
       color: $color-white;
       text-decoration: none;
@@ -107,7 +107,7 @@
     &:hover,
     &:active {
       background-position: 100%;
-      color: $color-primary;
+      color: var(--color-tertiary);
       transform: translateX(1rem);
     }
   }
