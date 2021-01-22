@@ -76,15 +76,16 @@
   grid-column: 2 / -2;
   display: grid;
   // grid-template-columns: repeat(8, 1fr);
-  grid-template-columns: [photo1-start] 1fr 1fr [photo1-end text1-start] 1fr 1fr [text1-end photo2-start] 1fr 1fr [photo2-end text2-start] 1fr 1fr [text2-end];
+  grid-template-columns: [photo1-start] 1fr [photo1-end text1-start] 1fr [text1-end photo2-start] 1fr [photo2-end text2-start] 1fr [text2-end];
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2rem;
 
   & > a {
     grid-row: 3/4;
     grid-column: text1-start / text1-end;
+    color: var(--color-tertiary-light-2);
     justify-self: center;
-    align-self: center;
+    align-self: start;
   }
 
   & a:link,
@@ -99,7 +100,7 @@
     justify-self: center;
 
     font-family: $font-display;
-    color: var(--color-tertiary-light-2);
+    color: var(--color-secondary-light-2);
     align-self: center;
   }
 
