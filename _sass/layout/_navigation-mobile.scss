@@ -1,5 +1,11 @@
 .navigation-mobile {
 
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
   &__checkbox {
     display: none;
   }
@@ -36,7 +42,7 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient(var(--color-primary-light-1), var(--color-secondary-light-1));
+    background-image: radial-gradient(var(--color-primary-light-1), var(--color-tertiary-light-2));
     // background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
 
