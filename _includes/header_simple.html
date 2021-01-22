@@ -4,6 +4,37 @@
 {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
 {%- if titles_size > 0 -%}
+<div class="navigation-mobile">
+  <input type="checkbox" class="navigation-mobile__checkbox" id="navi-toggle">
+  <label for="navi-toggle" class="navigation-mobile__button">
+    <span class="navigation-mobile__icon">&nbsp;</span>
+  </label>
+
+  <div class="navigation-mobile__background">&nbsp;</div>
+
+  <nav class="navigation-mobile__nav">
+    <ul class="navigation-mobile__list">
+      <li class="navigation-mobile__item"><a href="/" class="navigation-mobile__link">Inicio</a></li>
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        {% if page.url == my_page.url %}
+        <li class="navigation-mobile__item"><a href="{{ my_page.url | relative_url }}" class="navigation-mobile__link">{{my_page.title | escape}}</a></li>
+        <!-- <li class="site-nav__item site-nav__item--active">
+          <a class="site-nav--link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li> -->
+        {% else %}
+        <li class="navigation-mobile__item"><a href="{{ my_page.url | relative_url }}" class="navigation-mobile__link">{{my_page.title | escape}}</a></li>
+        <!-- <li class="site-nav__item">
+          <a class="site-nav--link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li> -->
+        {% endif %}
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </nav>
+</div>
+
 <nav class="site-nav">
   {% if page.url == "/" %}
   <li class="site-nav__item site-nav__item--active">
