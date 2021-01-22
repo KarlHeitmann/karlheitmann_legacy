@@ -36,7 +36,8 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient($color-primary-light, $color-primary-dark);
+    background-image: radial-gradient(var(--color-primary-light-1), var(--color-secondary-light-1));
+    // background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
 
     // transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
