@@ -76,13 +76,13 @@
   grid-column: 2 / -2;
   display: grid;
   // grid-template-columns: repeat(8, 1fr);
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: [photo1-start] 1fr 1fr [photo1-end text1-start] 1fr 1fr [text1-end photo2-start] 1fr 1fr [photo2-end text2-start] 1fr 1fr [text2-end];
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2rem;
 
   & > a {
     grid-row: 3/4;
-    grid-column: 2/4;
+    grid-column: text1-start / text1-end;
     justify-self: center;
     align-self: center;
   }
@@ -93,7 +93,7 @@
   }
 
   &__heading {
-    grid-column: 2 / 4;
+    grid-column: text1-start / text1-end;
     grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
@@ -104,10 +104,12 @@
   }
 
   &__paragraph {
-    grid-column: 2 / 4;
+    grid-column: text1-start / text1-end;
+    text-align: center;
   }
 
   &__figure {
+    grid-column: photo1-start / photo1-end;
     grid-row: 1 / -1;
   }
   &__img {
