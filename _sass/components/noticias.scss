@@ -89,10 +89,11 @@
   grid-template-columns: [photo-start] 1fr [photo-end text-start] 1fr [text-end];
   // grid-template-columns: [photo1-start] autofit minmax(30rem, 1fr) [photo1-end text1-start] autofit minmax(30rem, 1fr) [text1-end photo2-start] autofit minmax(30rem, 1fr) [photo2-end text2-start] autofit minmax(30rem, 1fr) [text2-end];
   // grid-template-columns: [photo1-start] minmax(30rem, 1fr) [photo1-end text1-start] minmax(30rem, 1fr) [text1-end photo2-start] minmax(30rem, 1fr) [photo2-end text2-start] minmax(30rem, 1fr) [text2-end];
-  // @include respond(phone) {
-  //   grid-template-columns: [photo-start text-start] 1fr [photo-end text-end];
-  // }
   grid-template-rows: 1fr 1fr 1fr;
+  @include respond(phone) {
+    grid-template-columns: [photo-start text-start] 1fr [photo-end text-end];
+    grid-template-rows: min-content min-content min-content min-content;
+  }
   grid-gap: 2rem;
 
   & > a {
@@ -107,6 +108,9 @@
   & a:link,
   & a:visited {
     text-decoration: none;
+    @include respond(phone) {
+      grid-row: 4 / span 1;
+    }
   }
 
   &__heading {
@@ -119,17 +123,26 @@
     font-family: $font-display;
     color: var(--color-secondary-light-2);
     align-self: center;
+    @include respond(phone) {
+      grid-row: 1 / span 1;
+    }
   }
 
   &__paragraph {
     // grid-column: 2 / span 1;
     grid-column: text-start / text-end;
     text-align: center;
+    @include respond(phone) {
+      grid-row: 3 / span 1;
+    }
   }
 
   &__figure {
     grid-column: photo-start / photo-end;
     grid-row: 1 / span 3;
+    @include respond(phone) {
+      grid-row: 2 / span 1;
+    }
   }
   &__img {
     width: 100%;
