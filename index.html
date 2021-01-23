@@ -8,6 +8,10 @@ title: Inicio
 subtitle: Karl Heitmann
 
 ---
+<!-- {%- assign page_paths = site.header_pages | default: default_paths -%} -->
+
+<!-- # assign t = site.data.locales[page.lang][page.lang] -->
+{%- assign t = site.data.locales.index['es'] -%}
 
 <div class="perfil">
   <img
@@ -15,13 +19,10 @@ subtitle: Karl Heitmann
     src="/assets/img/perfil.jpg"
     alt="Longtail boat in Thailand">
   <p class="perfil__paragraph perfil__paragraph--1">
-    Soy Karl Heitmann. Nací en la ciudad de Viña del Mar, Chile, el 4 de julio de 1988.
-    Soy ingeniero electrónico por profesión, pero programador por oficio, y me desempeño actualmente como freelancer.
+    {{t.perfil.p1}}
   </p>
-
   <p class="perfil__paragraph perfil__paragraph--2">
-    Tengo un profundo interés por aprender cualquier cosa que esté fuera de mi ombligo.
-    Las áreas que más me llaman la atención -además de la programación- son la física, la historia, la música y la filosofía.
+    {{t.perfil.p2}}
   </p>
 </div>
 
@@ -32,19 +33,21 @@ subtitle: Karl Heitmann
     Noticias
   </div> -->
   <h1 class="noticias__btn">
-    Novedades
+    {{t.noticias.heading}}
   </h1>
   <h1 class="noticias__subheading">
   </h1>
 
   <div class="noticia">
     <h1 class="noticia__heading">
-      Tango
+      {{t.noticias.noticia1.heading}}
     </h1>
     <p class="noticia__paragraph">
-      Nota sobre el tango y el Colectivo Libertango
+      {{t.noticias.noticia1.p}}
     </p>
-    <a href="/artes/tango.html">Ver más...</a>
+    <a href="/artes/tango.html">
+      {{t.noticias.noticia1.link}}
+    </a>
     <figure class="noticia__figure">
       <img
       width="100px"
@@ -60,12 +63,14 @@ subtitle: Karl Heitmann
   </div>
   <div class="noticia">
     <h1 class="noticia__heading">
-      Perfil en Workana
+      {{t.noticias.noticia2.heading}}
     </h1>
     <p class="noticia__paragraph">
-      Aquí hay una nota sobre mi perfil en workana. Empresa donde trabajo como freelancer.
+      {{t.noticias.noticia2.p}}
     </p>
-    <a href="/proyectos/workana.html">Ver más...</a>
+    <a href="/proyectos/workana.html">
+      {{t.noticias.noticia2.link}}
+    </a>
     <figure class="noticia__figure">
       <img
       width="100px"
