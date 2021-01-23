@@ -11,7 +11,7 @@ Quizás el testimonio más representativo de esta configuración sea el
 poema épico _La Araucana_, escrito por Alonso de Ercilla en el que se narran los enfrentamientos
 entre españoles y araucanos durante el siglo XVI. Así es la historia de Chile y así es nuestro pueblo.
 
-Desde la independencia de Chile que estas diferencias se manifiestan en quiebres 
+Desde la independencia de Chile que estas diferencias se manifiestan en quiebres
 que ocurren cada
 40 años aproximadamente. El último episodio ocurre a principios de los años 70, cuando
 a través de elecciones libres se escoge al primer presidente comunista del mundo Salvador Allende
@@ -40,7 +40,7 @@ y de derechas. En cada campaña presidencial, lo que hicieron cada uno de los ba
 apelar al voto blando: el tercio del centro. Así la concertación logró la mayoría de sus
 victorias sobre la derecha.
 
-<!-- Además, la 
+<!-- Además, la
 predecesora de Sebastián Piñera fue Michelle Bachelet, militante del Partido Socialista que había
 inclinado bastante la balanza hacia un tercio de la población, lo cuál no dejó muy contento al tercio del
 medio que de esta vez respaldó a Sebastián Piñera. Desde ese momento, el ambiente se ha ido
@@ -58,7 +58,7 @@ considerablemente su calidad de vida, lo han perdido todo debido a que se ha per
 derecho y que los criminales no se van a la cárcel. -->
 
 Esto ha ocasionado que muchos ciudadanos que antes tenían miedo a lo políticamente correcto,
-que sentían lástima por pronunciar alguna palabra que pudiera herir alguna susceptibilidad de 
+que sentían lástima por pronunciar alguna palabra que pudiera herir alguna susceptibilidad de
 alguno de los otros dos tercios, ya no le importe. Ahora estas personas quieren una sola cosa: justicia y
 que vuelva la paz.
 
@@ -74,4 +74,4 @@ los líderes timoratos tampoco. Solo un líder que tenga el coraje de poner orde
 
 Ya no hay voto blando, el tercio del centro ya se ha decidido.
 
-![foto de perfil](/assets/img/cruz_de_borgona.png){:class="img-responsive"}
+<!-- ![foto de perfil](/assets/img/cruz_de_borgona.png){:class="img-responsive"} -->
