@@ -2,7 +2,10 @@
   grid-row: 2 / -2;
   grid-column: full-start / full-end;
 
-  display: flex;
-  position: relative;
+  @include respond(phone) {
+    grid-column: init-vp / end-vp;
+    // grid-column: init-vp / full-end;
+    // grid-column: full-start / full-end;
+  }
 
 }
