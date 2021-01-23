@@ -5,6 +5,9 @@
   justify-content: space-between;
   // grid-template-columns: repeat(12, 1fr);
   // grid-gap: 3rem;
+  @include respond(tab-port) {
+    margin: 0;
+  }
 }
 
 .video {
