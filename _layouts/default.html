@@ -16,12 +16,6 @@
           </h1>
           {{ content }}
         </div>
-        <div class="sidebar">
-          <!-- {- include {{page.sidebar}} -} -->
-          {% if page.sidebar %}
-            {% include {{page.sidebar}} %}
-          {% endif %}
-        </div>
       </main>
 
       {%- include footer.html -%}
