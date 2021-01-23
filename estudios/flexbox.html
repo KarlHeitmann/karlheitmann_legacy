@@ -1,0 +1,74 @@
+---
+layout: page
+title: Estudios
+menus: header
+permalink: /estudios
+---
+
+<p>
+  Flexbox es una herramienta de composición de elementos que se creó en CSS3.
+  Flexbox aparece como una solución para el diseño web adaptable, también conocido como responsive web design.
+</p>
+<p>
+  Es así como flexbox permite con unas pocas líneas de código, lograr lo que antes se hacía utilizando las cajas flotantes en CSS
+  con varias líneas de código. Además, el problema de las cajas flotantes es que son muy engorrosas de utilizar para crear un
+  diseño adaptable a todo tipo de resoluciones de pantalla.
+</p>
+<p>
+  En flexbox, se tienen dos tipos de elementos importantes: el contenedor y los artículos que van dentro. El contenedor se define en CSS así:
+</p>
+<p>
+  <code>display: flex;</code>
+</p>
+<p>
+  Además, se debe especificar una dirección para ese contenedor: en qué dirección se van a ir agregando los artículos contenidos adentro, existen 4 opciones:
+  <ul>
+    <li><code>column</code></li>
+    <li><code>column-reverse</code></li>
+    <li><code>row</code></li>
+    <li><code>row-reverse</code></li>
+  </ul>
+  La opción column, hace que los artículos se vayan ingresando de arriba hacia abajo, la opción column-reverse, que se ingresen de abajo hacia arriba. La opción
+  row hace que se ingresen de izquierda a derecha, y la row-reverse de derecha a izquierda. Dicho esto, ya podemos estudiar como distribuir los artículos en el contenedor
+</p>
+<p>
+  <img src="/assets/img/estudios/flexbox/flexbox1.png" alt="Imagen flexbox y container">
+</p>
+<p>
+  Un contenedor puede tener varios artículos adentro, y los artículos se pueden ir acomodando con tan solo una línea de código para
+  situarse todos al final del contenedor, al principio, al centro, o distribuirse en el contenedor dejando espacios entre ellos,
+  alrededor de ellos, o igualmente espaciados.
+</p>
+<p>
+  <img src="/assets/img/estudios/flexbox/flexbox_justify-content.png" alt="Imagen justify-content">
+</p>
+<p>
+  En el dibujo anterior,
+  se observa un contenedor horizontal, pues la dirección de ese contenedor <code>flex-direction</code> ha sido definida como <code>row</code> (que es la dirección que viene por defecto, por cierto).
+  Ahí se observa como los artículos se ordenan en el mismo eje de la dirección, el eje de las abscisas.
+</p>
+<p>
+  Por si fuera poco, los artículos también se pueden alinear en el eje perpendicular al eje definido por la propiedad <code>flex-direction</code>. Esto se consigue
+  con la propiedad <code>align-items</code>, la cual puede tomar 5 valores:
+  <ul>
+    <li>
+      <code>stretch</code>: Expande los artículos.
+    </li>
+    <li>
+      <code>center</code>: Centra los artículos
+    </li>
+    <li>
+      <code>flex-start</code>: Coloca los artículos en el principio
+    </li>
+    <li>
+      <code>flex-end</code>: Coloca los artículos en el final
+    </li>
+    <li>
+      <code>baseline</code>: Coloca los artículos en la base
+    </li>
+  </ul>
+</p>
+<p>
+  <img src="/assets/img/estudios/flexbox/flexbox_align-items.png" alt="Imagen align-items">
+</p>
+
