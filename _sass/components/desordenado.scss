@@ -1,0 +1,32 @@
+.desordenado {
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+  @include respond(tab-port) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  align-items: center;
+  grid-gap: 2rem;
+
+  &__p-center {
+    grid-column: 5 / span 4;
+    @include respond(tab-port) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__p-left {
+    grid-column: 3 / span 4;
+    @include respond(tab-port) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__p-right {
+    grid-column: 6 / span 4;
+    @include respond(tab-port) {
+      grid-column: 1 / -1;
+    }
+  }
+}
