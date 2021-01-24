@@ -1,5 +1,10 @@
 .i18n {
-  &__flag {
+  display:flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  padding: 0 3rem;
+  // margin: 0 3rem;
+  &__img-flag {
     // fill: $color-primary;
 
     width: 4.5rem;
