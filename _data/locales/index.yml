@@ -1,0 +1,27 @@
+en:
+  perfil:
+    p1: I'm Karl Heitmann. I was botn on Viña del Mar, Chile, 4th july 1988. I'm electronic engineer by profession, but a coder by work and occupation. Actually, I work as a freelancer
+    p2: I have a profound interest to learn anything that's outside my belly button. My areas of interest are -besides coding- physics, history, music and philosophy.
+  noticias:
+    heading: News
+    noticia1:
+      heading: Tango
+      p: A note about ango and Colectivo Libertando
+      link: More...
+    noticia2:
+      heading: Workana Profile
+      p: Here's a note about my profile on Workana. Company where I actually work as a freelancer
+es:
+  perfil:
+    p1: Soy Karl Heitmann. Nací en la ciudad de Viña del Mar, Chile, el 4 de julio de 1988. Soy ingeniero electrónico por profesión, pero programador por oficio, y me desempeño actualmente como freelancer.
+    p2: Tengo un profundo interés por aprender cualquier cosa que esté fuera de mi ombligo. Las áreas que más me llaman la atención -además de la programación- son la física, la historia, la música y la filosofía.
+  noticias:
+    heading: Novedades
+    noticia1:
+      heading: Tango
+      p: Nota sobre el tango y el Colectivo Libertango
+      link: Ver más...
+    noticia2:
+      heading: Perfil en Workana
+      p: Aquí hay una nota sobre mi perfil en workana. Empresa donde trabajo como freelancer.
+      link: Ver más...

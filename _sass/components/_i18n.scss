@@ -1,0 +1,25 @@
+.i18n {
+  display:flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  padding: 0 3rem;
+  // margin: 0 3rem;
+  &__idioma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    margin: 0 2rem;
+  }
+
+  &__img-flag {
+    // fill: $color-primary;
+
+    width: 4.5rem;
+    height: 4.5rem;
+    // grid-row: 1 / span 2; // -1 se refiere a la ultima explicit
+    // transform: translateY(-1rem);
+  }
+}
