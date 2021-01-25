@@ -7,17 +7,6 @@ permalink: /estudios/flexbox
 ---
 
 <div class="estudios-flexbox">
-  <figure class="estudios-flexbox__figure">
-    <img
-      width="100px"
-      src="/assets/img/estudios/flexbox/flexbox1.png"
-      alt="Street lamp"
-      class="noticia__img"
-      >
-    <figcaption
-      class="caption"
-    >Container y artículos</figcaption>
-  </figure>
   <div>
     <p>
       Flexbox es una herramienta de composición de elementos que se creó en CSS3.
@@ -35,7 +24,8 @@ permalink: /estudios/flexbox
       <code>display: flex;</code>
     </p>
     <p>
-      Además, se debe especificar una dirección para ese contenedor: en qué dirección se van a ir agregando los artículos contenidos adentro, existen 4 opciones:
+      Además, se debe especificar una dirección para ese contenedor: en qué dirección se van a ir agregando
+      los artículos contenidos adentro, existen 4 opciones:
       <ul>
         <li><code>column</code></li>
         <li><code>column-reverse</code></li>
@@ -46,6 +36,17 @@ permalink: /estudios/flexbox
       row hace que se ingresen de izquierda a derecha, y la row-reverse de derecha a izquierda. Dicho esto, ya podemos estudiar como distribuir los artículos en el contenedor
     </p>
   </div>
+  <figure class="estudios-flexbox__figure">
+    <img
+      width="100px"
+      src="/assets/img/estudios/flexbox/flexbox1.png"
+      alt="Street lamp"
+      class="noticia__img"
+      >
+    <figcaption
+      class="caption"
+    >Container y artículos</figcaption>
+  </figure>
   <!-- <img
     src="/assets/img/estudios/flexbox/flexbox1.png"
     alt="Imagen flexbox y container"
@@ -64,7 +65,7 @@ permalink: /estudios/flexbox
     </p>
     <p>
       Por si fuera poco, los artículos también se pueden alinear en el eje perpendicular al eje definido por la propiedad <code>flex-direction</code>. Esto se consigue
-      con la propiedad <code>align-items</code>, la cual puede tomar 5 valores:
+      con la propiedad <code>justify-content</code>, la cual puede tomar 5 valores:
       <ul>
         <li>
           <code>stretch</code>: Expande los artículos.
@@ -85,20 +86,50 @@ permalink: /estudios/flexbox
     </p>
   </div>
   <div></div>
-  <img
-    src="/assets/img/estudios/flexbox/flexbox_justify-content.png"
-    alt="Imagen justify-content"
-    class="estudios-flexbox__img"
-    >
-  <img
-    src="/assets/img/estudios/flexbox/flexbox_align-items.png"
-    alt="Imagen align-items"
-    class="estudios-flexbox__img"
-    >
+  <figure class="estudios-flexbox__figure">
+    <img
+      width="100px"
+      src="/assets/img/estudios/flexbox/flexbox_justify-content.png"
+      alt="Street lamp"
+      class="noticia__img"
+      >
+    <figcaption
+      class="caption"
+    >Container con los distintos valores de justify-content</figcaption>
+  </figure>
+  <div>
+    En el eje perpendicular a la dirección definida por el container flex, también se pueden
+    alinear los artículos. Esto se logra con la propiedad <code>align-items</code>. Esta puede tomar estos valores:
+    <ul>
+      <li>
+        <code>center</code>: Centrar en el eje perpendicular.
+      </li>
+      <li>
+        <code>stretch</code>: Estirar los artículos hasta los bordes del contenedor.
+      </li>
+      <li>
+        <code>flex-start</code>: Poner los artículos en el borde del comienzo.
+      </li>
+      <li>
+        <code>flex-end</code>: Poner los artículos en el borde del final.
+      </li>
+    </ul>
+  </div>
+  <figure class="estudios-flexbox__figure">
+    <img
+      width="100px"
+      src="/assets/img/estudios/flexbox/flexbox_align-items.png"
+      alt="Street lamp"
+      class="noticia__img"
+      >
+    <figcaption
+      class="caption"
+    >Container con los distintos valores de align-items</figcaption>
+  </figure>
   <div>
     <p>
       Eso es lo más básico que hay sobre flexbox. Recuerde definir el elemento contenedor con <code>display-flex</code>, y con eso todos los artículos que
-      coloque adentro, se irán acomodando de acuerdo a las reglas establecidas en el contenedor. Algunas cosas más que usted puede definir, es la propiedad.
+      coloque adentro se irán acomodando de acuerdo a las reglas establecidas en el contenedor. Algunas cosas más que usted puede definir, es la propiedad.
       <code>flex-wrap</code>, la cual hace que si hay varios elemenos dentro del contenedor, estos se caigan a una nueva línea, si lleva por valor <code>wrap</code>.
     </p>
     <p>
