@@ -18,10 +18,14 @@ es:
   noticias:
     heading: Novedades
     noticia1:
+      heading: Artesano siglo XXI
+      p: Una nota sobre los programadores
+      link: Ver más...
+    noticia2:
       heading: Tango
       p: Nota sobre el tango y el Colectivo Libertango
       link: Ver más...
-    noticia2:
+    noticia3:
       heading: Perfil en Workana
       p: Aquí hay una nota sobre mi perfil en workana. Empresa donde trabajo como freelancer.
       link: Ver más...
