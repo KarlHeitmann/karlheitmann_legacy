@@ -1,0 +1,15 @@
+.post-article {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  grid-gap: 3rem;
+
+  & > div {
+    border-top: 6px solid var(--color-tertiary-dark-2);
+  }
+
+  & > p {
+    border-top: 6px solid var(--color-tertiary-dark-2);
+  }
+
+}
