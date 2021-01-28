@@ -36,14 +36,70 @@ comments: true
   </p>
   <p>
     Es cierto que frente al desorden que se observa en el código de los novatos, uno se ve tentado a pedirles que documenten su código. Pero esta petición le hace
-    un flaco favor a los estudiantes, pues tanto que se lo repiten y se queda pegado. Además, al llegar a sus puestos de trabajo, se ponen a repetir estos
-    mantras entre las personas que llegan.
+    un flaco favor a los estudiantes, pues tanto que se lo repiten y se queda pegado. Además, al llegar a sus puestos de trabajo, no abandonan estos mantras,
+    perpetuándose esta práctica con las generaciones siguientes.
   </p>
   <p>
-    ¿Quién no ha escuchado estas oraciones en su primer ramo de programación en la Universidad o Instituto? Estas frases son repetidas por los académicos
-    como si fuentan un mantra, y va dirigido a los estudiantes que por primer vez se están aventurando en un lenguaje nuevo.
+    El problema con estas reglas, es que esa no es la función principal de un comentario en el código fuente. Los comentarios son muchísimo más útiles para depurar
+    tu código fuente. Puedes usar comentarios para bypassear partes intrincadas de tu código fuente, y así identificar en qué punto está el error. Así como
+    este truco, existen muchísimos más que se ayudan de los comentarios para poder encontrar errores en tu código. Pero yo nunca los estudié en la facultad,
+    fueron tácticas que tuve que desarrollar para ser más eficiente a la hora de programar.
   </p>
   <p>
-    Así es como
+    Un lenguaje de programación tiene una diferencia sustancial respecto a un idioma, y es que uno puede componer e inventar las palabras que quiera.
+    Si esto lo podemos aplicar para que siguiendo la sintáxis del lenguaje que estemos usando, hagamos un programa expresivo: que el programa <stron>hable</stron>,
+    que nos diga cosas, que nos cuente que es lo que está haciendo el algoritmo. Entonces los comentarios se hacen totalmente prescindibles. Por ejemplo, al escribir
+    yo esta nota, ¿verdad que no es necesario que le esté comentando cada párrafo de lo que voy escribiendo?
+  </p>
+  <p>
+    Como yo me di cuenta de esto, fue cuando comencé a ocupar Ruby on Rails. Cuando entendí sus convenciones: por ejemplo cuando un sustantivo está en plural se ocupa
+    para controladores y vistas, y cuando está en singular se ocupa en modelos. Esto lo llevé más lejos a usar un sustantivo en plural cuando me refiero a un arreglo,
+    y en singular cuando me refiero a un objeto. Un detalle tan pequeño como este, hace la diferencia entre una variable que se llama "lista_de_libros" y otra que es simplemente
+    "libros"
+  </p>
+  <p>
+    Permítame darle un ejemplo concreto de proyectos exitosos y otros no tanto. Kivy es un framework en Python que le permite a uno crear GUIs para Windows, Linux,
+    Mac, e incluso móvil en sistemas android. Sorprendente, ¿no?  <a href="https://github.com/kivy/kivy">Aquí puede ver el código fuente del proyecto.</a> Fíjese
+    como el código está perfectamente documentado con comentarios. En contraste, el framework <a href="https://github.com/twbs/bootstrap">Bootstrap</a> apenas tiene comentarios
+    en su código fuente, y son mucho más breves que en los comentarios de Kivy que abarcan más de 100 líneas consecutivas de código.
+  </p>
+  <p>
+    Si la calidad del código fuera directamente proporcional a la cantidad de comentarios -que es lo que pretenden numerosos académicos-, entonces Kivy debería tener más
+    forks y estrellas que Bootstrap. Pero la realidad nos indica que Bootstrap tiene 72K forks, y Kivy 2.6K forks. Bootstrap supera en un orden de magnitud a Kivy en la cantidad de estrellas.
+  </p>
+  <p>
+    Pueden hacer la comparación también entre React Native y Kivy. Estuve revisando el código de RN, y si bien este tiene más comentarios que Bootstrap, no llega
+    a ser tanto como los que hay en Kivy. Y los comentarios de RN hablan sobre los argumentos de las funciones definidas ahí y entrega ejemplos. Luego la parte con código está limpia.
+  </p>
+  <p>
+    Por último, resulta curioso que en el caso de Bootstrap se celebre que "la documentación que tiene sea fantástica". Es cierto, la documentación de Bootstrap es increíble
+    (no exenta de errores, debo decir), pero hay que notar que esta está escrita aparte. No forma parte del código fuente del proyecto.
+  </p>
+  <p>
+    No quiero decir que la documentación haya que arrojarla por la borda, para nada. Es importante documentar el código, pero no es necesario hacerlo en el código mismo.
+    Un código bien escrito es un código que al leerlo uno entiende lo que hace. Es necesario que se ocupen nombres para variables y funciones que hablen,
+    que nos cuenten el algoritmo sin necesidad de notas a pie de página, que más encima oculten lo que hace el resto del código;
+    como también seguir convenciones claras y que el equipo maneje.
+  </p>
+  <p>
+    La documentación como tal puede ir perfectamente en otros lugares. Por ejemplo si uno sigue el Test Driven Development, la documentación puede ir perfectamente
+    en el test suite de nuestro proyecto. La documentación ahí nos dice qué es lo que hacen nuestras funciones, y las describen diciendo cómo deben funcionar. Otra herramienta
+    que nos puede ayudar a esto es el buen uso de Git. Usando Git los comentarios si que se hacen superfluos, porque en cada commit vamos describiendo lo que hicimos, y
+    en cada merge resumimos las funcionalidades añadidas y los problemas solucionados
+  </p>
+  <p>
+    El paradigma de programación más popular es el de Programación Orientada a Objetos, popularizado por Java. En mi candidez cuando estudié por fin este paradigma en
+    la universidad, yo intentaba usar este martillo para atornillar los tornillos que veía. Pretendía que era una herramienta universal, cuando la POO es simplemente
+    un martillo que nos va a servir muy bien cuando tengamos clavos, pero no cuando tengamos tornillos. Por eso que es fundamental también aprender otros paradigmas,
+    como la Programación Funcional, o aprender de decoradores que nos pueden servir para mejorar nuestra POO.
+  </p>
+  <p>
+    Lamentablemente, estas herramientas no se enseñan a utilizar en los institutos tradicionales de educación como las universidades. He conocido a ingenieros que han
+    salido de prestigiosas universidades que no tienen idea de qué es el TDD, el programa Git o la Programación Funcional. Por lo tanto, es normal que de lo único que
+    hablen sea de los comentarios.
+  </p>
+  <p>
+    Los programadores somos personas prácticas, aterrizadas en la realidad. "Si funciona, no lo arregle" puede ser la frase que mejor representa esto. A la mayoría
+    de nosotros nos gusta escribir programas que solucionen problemas concretos. Profesores de la universidad: no nos pidan que escribamos poesía en los comentarios.
   </p>
 </div>
