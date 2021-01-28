@@ -8,14 +8,14 @@ comments: true
 
 <div class="post-article">
   <p>
-    "No olvide documentar su código", "escriba comentarios", "los comentarios le ayudarán a usted cuando vuelva a tomar el código en 3 meses".
-    Estas son los consejos que suelen dar los académicos cuando enseñan un lenguaje de programación a los estudiantes cuando estos dan
+    "No olvide documentar su código", "escriba comentarios", "los comentarios le ayudarán a usted cuando vuelva a tomar el código en 3 meses más".
+    Estos son los consejos que suelen dar los académicos en las universidades cuando enseñan un lenguaje de programación a los estudiantes, al dar
     sus primeros pasos en la programación. Yo tengo unos comentarios que hacer al respecto
   </p>
   <p>
     Un lenguaje de programación nos permite comunicarnos con la máquina. Asi podemos delegarle tareas tediosas al ordenador para
     que las repita in saecula seculorum. Al aprender un lenguaje de programación, la parte más difícil está en cambiar el interruptor,
-    y pasar de pensar como humano, a pensar como máquina. Tenemos que realizar ciertas abstracciones para aislar una tarea cotidiana que realizamos,
+    y pasar de pensar como humano a pensar como máquina. Tenemos que realizar ciertas abstracciones para aislar una tarea cotidiana que realizamos,
     y llevarla a una serie de pasos claros y simples que el ordenador pueda ejecutar, en su reino de caminos de alambres que entregan información
     a la CPU.
   </p>
@@ -27,22 +27,22 @@ comments: true
   <p>
     Para cualquier novato en el asunto, este proceso resulta frustrante y requiere bastante esfuerzo, porque por una parte hay que memorizar un conjunto
     de instrucciones nuevas, y por otra hay que realizar este ejercicio de abstracción que el cerebro todavía no está acostumbrado.
-    Uno debe imaginar qué es lo que sucede en cada iteración de un loop, para así identificar cuando son las condiciones de término del bucle.
+    Uno debe imaginar qué es lo que sucede en cada iteración de un loop, para así identificar cuando son las condiciones de término del bucle, entre otras cosas.
   </p>
   <p>
-    Con tantas cosas nuevas por aprender, lo natural es que el código del estudiante no se vea profesional: porque el estudiante está aprendiendo algo
+    Con tanta información por aprender, lo natural es que el código del estudiante no se vea profesional: porque el estudiante está aprendiendo algo
     totalmente nuevo. No se le ocurrirá nombrar bien las variables, tampoco indentar su código, ni seguir alguna convención. Es el mismo motivo por el cual
     aprendemos a caminar antes de correr.
   </p>
   <p>
     Es cierto que frente al desorden que se observa en el código de los novatos, uno se ve tentado a pedirles que documenten su código. Pero esta petición le hace
-    un flaco favor a los estudiantes, pues tanto que se lo repiten y se queda pegado. Además, al llegar a sus puestos de trabajo, no abandonan estos mantras,
-    perpetuándose esta práctica con las generaciones siguientes.
+    un flaco favor a los estudiantes, pues tanto que se lo repiten, que se les queda pegado y después más encima comentan mal. Pues en la universidad aprenden a
+    programar y no tienen práctica en redacción.
   </p>
   <p>
     El problema con estas reglas, es que esa no es la función principal de un comentario en el código fuente. Los comentarios son muchísimo más útiles para depurar
-    tu código fuente. Puedes usar comentarios para bypassear partes intrincadas de tu código fuente, y así identificar en qué punto está el error. Así como
-    este truco, existen muchísimos más que se ayudan de los comentarios para poder encontrar errores en tu código. Pero yo nunca los estudié en la facultad,
+    su código fuente. Puede usar comentarios para bypassear partes intrincadas de su código fuente, y así identificar en qué punto está el error. Así como
+    este truco, existen muchísimos más que se ayudan de los comentarios para poder encontrar errores en su código. Pero yo nunca los estudié en la facultad,
     fueron tácticas que tuve que desarrollar para ser más eficiente a la hora de programar.
   </p>
   <p>
@@ -52,10 +52,10 @@ comments: true
     yo esta nota, ¿verdad que no es necesario que le esté comentando cada párrafo de lo que voy escribiendo?
   </p>
   <p>
-    Como yo me di cuenta de esto, fue cuando comencé a ocupar Ruby on Rails. Cuando entendí sus convenciones: por ejemplo cuando un sustantivo está en plural se ocupa
-    para controladores y vistas, y cuando está en singular se ocupa en modelos. Esto lo llevé más lejos a usar un sustantivo en plural cuando me refiero a un arreglo,
+    Cuando comencé a ocupar Ruby on Rails fue que me di cuenta de esto. Cuando entendí sus convenciones: por ejemplo cuando un sustantivo está en plural se ocupa
+    para controladores y vistas, mientras cuando está en singular se ocupa en modelos. Esto lo llevé más lejos a usar un sustantivo en plural cuando me refiero a un arreglo,
     y en singular cuando me refiero a un objeto. Un detalle tan pequeño como este, hace la diferencia entre una variable que se llama "lista_de_libros" y otra que es simplemente
-    "libros"
+    "libros". Posteriormente, revisando código de otros proyectos me di cuenta que esta pequeña regla no la usaba solo yo.
   </p>
   <p>
     Permítame darle un ejemplo concreto de proyectos exitosos y otros no tanto. Kivy es un framework en Python que le permite a uno crear GUIs para Windows, Linux,
@@ -65,11 +65,11 @@ comments: true
   </p>
   <p>
     Si la calidad del código fuera directamente proporcional a la cantidad de comentarios -que es lo que pretenden numerosos académicos-, entonces Kivy debería tener más
-    forks y estrellas que Bootstrap. Pero la realidad nos indica que Bootstrap tiene 72K forks, y Kivy 2.6K forks. Bootstrap supera en un orden de magnitud a Kivy en la cantidad de estrellas.
+    forks y estrellas que Bootstrap. Pero la realidad nos indica que Bootstrap tiene 72K forks, y Kivy 2.6K forks. También bootstrap supera en un orden de magnitud a Kivy en la cantidad de estrellas.
   </p>
   <p>
     Pueden hacer la comparación también entre React Native y Kivy. Estuve revisando el código de RN, y si bien este tiene más comentarios que Bootstrap, no llega
-    a ser tanto como los que hay en Kivy. Y los comentarios de RN hablan sobre los argumentos de las funciones definidas ahí y entrega ejemplos. Luego la parte con código está limpia.
+    a ser tanto como los que hay en Kivy. Y los comentarios de RN hablan sobre los argumentos de las funciones definidas ahí y entrega ejemplos. Luego la parte de código está limpia.
   </p>
   <p>
     Por último, resulta curioso que en el caso de Bootstrap se celebre que "la documentación que tiene sea fantástica". Es cierto, la documentación de Bootstrap es increíble
@@ -90,8 +90,9 @@ comments: true
   <p>
     El paradigma de programación más popular es el de Programación Orientada a Objetos, popularizado por Java. En mi candidez cuando estudié por fin este paradigma en
     la universidad, yo intentaba usar este martillo para atornillar los tornillos que veía. Pretendía que era una herramienta universal, cuando la POO es simplemente
-    un martillo que nos va a servir muy bien cuando tengamos clavos, pero no cuando tengamos tornillos. Por eso que es fundamental también aprender otros paradigmas,
-    como la Programación Funcional, o aprender de decoradores que nos pueden servir para mejorar nuestra POO.
+    un martillo que nos va a servir muy bien cuando tengamos clavos, pero no cuando tengamos tornillos. Por eso que es fundamental aprender otros paradigmas,
+    como la Programación Funcional, o aprender de decoradores que nos pueden servir para mejorar nuestra POO. Esto <strong>enriquece nuestro vocabulario en programación</strong>.
+    Es como aprender la gramática de un lenguaje.
   </p>
   <p>
     Lamentablemente, estas herramientas no se enseñan a utilizar en los institutos tradicionales de educación como las universidades. He conocido a ingenieros que han
