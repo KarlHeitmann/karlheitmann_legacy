@@ -12,11 +12,22 @@ permalink: /about
     A continuación, unos datos de mis perfiles en otros sitios:
   </p>
   <div class="about__github">
-    <img class="about__github__img" id="github__img">
+    <img alt="Github profile" class="about__github__img" id="github__img">
     <div>
       <p><strong>Followers: </strong><span id="github__followers"></span></p>
       <p><strong>Following: </strong><span id="github__following"></span></p>
     </div>
+  </div>
+  <div class="about__stackoverflow">
+    <img alt="Stackoverflow profile" class="about__stackoverflow__img" id="stackoverflow__img">
+    <div class="about__stackoverflow__badges">
+      <p><strong>Bronze badges: </strong><span id="stackoverflow__bronze-badge"></span></p>
+      <p><strong>Silver badges: </strong><span id="stackoverflow__silver-badge"></span></p>
+      <p><strong>Gold badges: </strong><span id="stackoverflow__gold-badge"></span></p>
+    </div>
+  </div>
+  <div class="about__codewars">
+
   </div>
   <script>
     axios.get('https://api.github.com/users/KarlHeitmann')
@@ -33,7 +44,23 @@ permalink: /about
         document.getElementById("github__img").setAttribute("src", avatar_url);
         document.getElementById("github__followers").innerHTML = followers;
         document.getElementById("github__following").innerHTML = following;
-
+      })
+    axios.get('https://api.stackexchange.com/2.2/users/2101187?order=desc&sort=reputation&site=stackoverflow')
+      .then(response => {
+        const {data} = response;
+        console.log(data)
+        const {items} = data;
+        console.log(items);
+        items.forEach(item => {
+          console.log(item)
+          if (item.display_name == 'Karl') {
+            // debugger;
+            document.getElementById("stackoverflow__img").setAttribute("src", item.profile_image)
+            document.getElementById("stackoverflow__bronze-badge").innerHTML = item.badge_counts.bronze
+            document.getElementById("stackoverflow__silver-badge").innerHTML = item.badge_counts.silver
+            document.getElementById("stackoverflow__gold-badge").innerHTML = item.badge_counts.gold
+          }
+        });
       })
   </script>
 </div>
