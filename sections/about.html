@@ -1,0 +1,86 @@
+---
+layout: page
+title: About
+menus: header
+permalink: /about
+---
+
+<div class="about">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <div class="about-header">
+    <p>Soy Karl Heitmann, un <a href="{% post_url 2021-01-24-artesano-siglo-xxi %}">artesano del siglo XXI</a></p>
+    <p>
+      A continuación, unos datos de mis perfiles en otros sitios:
+    </p>
+  </div>
+  <div class="about-github">
+    <div class="about-github__img-background">
+      <img
+        class="about-github__img-background__image"
+        src="assets/img/logos/github_logo.png"
+        alt="">
+    </div>
+    <div class="about-github__profile">
+      <img alt="Github profile" class="about-github__profile__image" id="github-img">
+      <div class="about-github__profile__data">
+        <p><strong>Seguidores: </strong><span id="github-followers"></span></p>
+        <p><strong>Siguiendo: </strong><span id="github-following"></span></p>
+      </div>
+    </div>
+  </div>
+  <div class="about-stackoverflow">
+    <div class="about-stackoverflow__logo-background">
+      <img
+        class="about-stackoverflow__logo-background__image"
+        src="assets/img/logos/stackoverflow.png"
+        alt="Stackoverflow"
+        >
+    </div>
+    <div class="about-stackoverflow__profile">
+      <img
+        class="about-stackoverflow__profile__img"
+        alt="Stackoverflow profile"
+        id="stackoverflow__img">
+      <div class="about-stackoverflow__badges">
+        <p><strong>Medallas de bronze: </strong><span id="stackoverflow__bronze-badge"></span></p>
+        <p><strong>Medallas de plata: </strong><span id="stackoverflow__silver-badge"></span></p>
+        <p><strong>Medallas de oro: </strong><span id="stackoverflow__gold-badge"></span></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    axios.get('https://api.github.com/users/KarlHeitmann')
+      .then(function (response) {
+        // handle success
+        // console.log(response.body.data);
+        const {data} = response;
+        console.log(data);
+        const {
+          avatar_url,
+          followers,
+          following,
+        } = data;
+        document.getElementById("github-img").setAttribute("src", avatar_url);
+        document.getElementById("github-followers").innerHTML = followers;
+        document.getElementById("github-following").innerHTML = following;
+      })
+    axios.get('https://api.stackexchange.com/2.2/users/2101187?order=desc&sort=reputation&site=stackoverflow')
+      .then(response => {
+        const {data} = response;
+        console.log(data)
+        const {items} = data;
+        console.log(items);
+        items.forEach(item => {
+          console.log(item)
+          if (item.display_name == 'Karl') {
+            // debugger;
+            document.getElementById("stackoverflow__img").setAttribute("src", item.profile_image)
+            document.getElementById("stackoverflow__bronze-badge").innerHTML = item.badge_counts.bronze
+            document.getElementById("stackoverflow__silver-badge").innerHTML = item.badge_counts.silver
+            document.getElementById("stackoverflow__gold-badge").innerHTML = item.badge_counts.gold
+          }
+        });
+      })
+  </script>
+</div>
+KarlHeitmann

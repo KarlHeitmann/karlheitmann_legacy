@@ -35,6 +35,7 @@ header_pages:
   - sections/artes.html
   - sections/reflexiones.html
   - sections/proyectos.html
+  - sections/about.html
   # - blog.html
 
   # - about.md

@@ -1,3 +1,7 @@
+@import "about/stackoverflow";
+@import "about/header";
+@import "about/github";
+
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -26,6 +30,7 @@
 @import "layout/pagem";
 @import "layout/sidebar";
 
+@import "pages/about";
 @import "pages/home";
 @import "pages/tango";
 
