@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 5rem 15rem;
+  padding-bottom: 5rem;
+  border-radius: 8px;
+
+  background-color: var(--color-primary);
 
   &__img-background {
     margin: 3rem 0;
