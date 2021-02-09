@@ -26,6 +26,7 @@ permalink: /about
     <div class="about-github__profile">
       <img alt="Github profile" class="about-github__profile__image" id="github-img">
       <div class="about-github__profile__data">
+        <p><strong>Perfil: </strong><span><a href="https://github.com/KarlHeitmann">Karl Heitmann</a></span></p>
         <p><strong>Seguidores: </strong><span id="github-followers"></span></p>
         <p><strong>Siguiendo: </strong><span id="github-following"></span></p>
       </div>
@@ -45,6 +46,7 @@ permalink: /about
         alt="Stackoverflow profile"
         id="stackoverflow__img">
       <div class="about-stackoverflow__badges">
+        <p><strong>Perfil: </strong><span><a href="https://stackoverflow.com/users/2101187/karl">Karl Heitmann</a></span></p>
         <p><strong>Medallas de bronze: </strong><span id="stackoverflow__bronze-badge"></span></p>
         <p><strong>Medallas de plata: </strong><span id="stackoverflow__silver-badge"></span></p>
         <p><strong>Medallas de oro: </strong><span id="stackoverflow__gold-badge"></span></p>
@@ -64,10 +66,9 @@ permalink: /about
       </p>
     </div>
     <div class="about-lichess-profile">
-      <div class="about-lichess-profile__username">
-        <a id="about-lichess-profile__username-link" href=""></a>
-      </div>
-      <p><strong>Playtime: </strong><span id="about-lichess-profile__username-playtime"></span></p>
+      <p><strong>Perfil: </strong><span><a id="about-lichess-profile__username-link" href=""></a></span></p>
+      <p><strong>Fecha de creación: </strong><span id="about-lichess-profile-created-at"></span></p>
+      <p><strong>Tiempo de juego: </strong><span id="about-lichess-profile__username-playtime"></span></p>
       <p><strong>Seguidores: </strong><span id="about-lichess-profile__username-followers"></span></p>
       <p><strong>Siguiendo: </strong><span id="about-lichess-profile__username-following"></span></p>
       <p><strong>Puntaje: </strong><span id="about-lichess-profile__username-score"></span></p>
@@ -79,7 +80,7 @@ permalink: /about
         // handle success
         // console.log(response.body.data);
         const {data} = response;
-        // console.log(data);
+        console.log(data);
         const {
           avatar_url,
           followers,
@@ -92,7 +93,7 @@ permalink: /about
     axios.get('https://api.stackexchange.com/2.2/users/2101187?order=desc&sort=reputation&site=stackoverflow')
       .then(response => {
         const {data} = response;
-        // console.log(data)
+        console.log(data)
         const {items} = data;
         // console.log(items);
         items.forEach(item => {
@@ -109,8 +110,11 @@ permalink: /about
     axios.get('https://lichess.org/api/user/kheitmann')
       .then(response => {
         const {data} = response;
-        document.getElementById("about-lichess-profile__username-link").setAttribute("href", data.url);
-        document.getElementById("about-lichess-profile__username-link").innerHTML = data.username;
+        console.log(data);
+        var utcSeconds = data.createdAt;
+        var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+        d.setUTCSeconds(utcSeconds / 1000);
+        document.getElementById("about-lichess-profile-created-at").innerHTML = d.toLocaleString();
         document.getElementById("about-lichess-profile__username-followers").innerHTML = data.nbFollowers;
         document.getElementById("about-lichess-profile__username-following").innerHTML = data.nbFollowing;
         let {total} = data.playTime;
@@ -123,8 +127,8 @@ permalink: /about
           return prev += Number(data['perfs'][key]['rating']);
         }, 0)
         document.getElementById("about-lichess-profile__username-score").innerHTML = (suma_puntaje / keys.length);
-        console.log(suma_puntaje / keys.length)
-        console.log(data)
+        // console.log(suma_puntaje / keys.length)
+        // console.log(data)
       })
   </script>
 </div>
