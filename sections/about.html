@@ -63,6 +63,15 @@ permalink: /about
         lichess.org
       </p>
     </div>
+    <div class="about-lichess-profile">
+      <div class="about-lichess-profile__username">
+        <a id="about-lichess-profile__username-link" href=""></a>
+      </div>
+      <p><strong>Playtime: </strong><span id="about-lichess-profile__username-playtime"></span></p>
+      <p><strong>Seguidores: </strong><span id="about-lichess-profile__username-followers"></span></p>
+      <p><strong>Siguiendo: </strong><span id="about-lichess-profile__username-following"></span></p>
+      <p><strong>Puntaje: </strong><span id="about-lichess-profile__username-score"></span></p>
+    </div>
   </div>
   <script>
     axios.get('https://api.github.com/users/KarlHeitmann')
@@ -100,6 +109,16 @@ permalink: /about
     axios.get('https://lichess.org/api/user/kheitmann')
       .then(response => {
         const {data} = response;
+        document.getElementById("about-lichess-profile__username-link").setAttribute("href", data.url);
+        document.getElementById("about-lichess-profile__username-link").innerHTML = data.username;
+        document.getElementById("about-lichess-profile__username-followers").innerHTML = data.nbFollowers;
+        document.getElementById("about-lichess-profile__username-following").innerHTML = data.nbFollowing;
+        let {total} = data.playTime;
+        let playtime = `${Math.round(total / 3600)}:${Math.round(total / 60) % 60}:${total % 60}`
+        document.getElementById("about-lichess-profile__username-playtime").innerHTML = playtime;
+        // document.getElementById("about-lichess-profile__username-score").innerHTML = (data.playTime.total / 60);
+
+        // const
         console.log(data)
       })
   </script>
