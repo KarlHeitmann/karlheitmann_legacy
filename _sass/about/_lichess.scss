@@ -1,0 +1,29 @@
+.about-lichess {
+  margin: 5rem 15rem;
+  padding: 1rem 1rem 5rem 1rem;
+  border-radius: 8px;
+
+  background-color: var(--color-primary);
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-text {
+      margin: 0 4rem;
+      font-size: 4rem;
+    }
+  }
+
+  &__logo-background {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 13px;
+    width: 40%;
+
+    &__image {
+      width: 100%;
+    }
+
+  }
+}

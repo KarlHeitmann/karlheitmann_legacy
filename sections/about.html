@@ -12,6 +12,9 @@ permalink: /about
     <p>
       A continuación, unos datos de mis perfiles en otros sitios:
     </p>
+    <p>
+      <a href="http://www.karlheitmann.com/" target="_blank" rel="noopener noreferrer">Aquí está mi página en WordPress</a>, donde puedes ver una galería de las cosas que he hecho con esa herramienta.
+    </p>
   </div>
   <div class="about-github">
     <div class="about-github__img-background">
@@ -48,13 +51,26 @@ permalink: /about
       </div>
     </div>
   </div>
+  <div class="about-lichess">
+    <div class="about-lichess__logo">
+      <div class="about-lichess__logo-background">
+        <img
+          src="assets/img/logos/lichess_improved_logo.svg"
+          class="about-lichess__logo-background__image"
+          alt="Lichess logo">
+      </div>
+      <p class="about-lichess__logo-text">
+        lichess.org
+      </p>
+    </div>
+  </div>
   <script>
     axios.get('https://api.github.com/users/KarlHeitmann')
       .then(function (response) {
         // handle success
         // console.log(response.body.data);
         const {data} = response;
-        console.log(data);
+        // console.log(data);
         const {
           avatar_url,
           followers,
@@ -67,11 +83,11 @@ permalink: /about
     axios.get('https://api.stackexchange.com/2.2/users/2101187?order=desc&sort=reputation&site=stackoverflow')
       .then(response => {
         const {data} = response;
-        console.log(data)
+        // console.log(data)
         const {items} = data;
-        console.log(items);
+        // console.log(items);
         items.forEach(item => {
-          console.log(item)
+          // console.log(item)
           if (item.display_name == 'Karl') {
             // debugger;
             document.getElementById("stackoverflow__img").setAttribute("src", item.profile_image)
@@ -80,6 +96,11 @@ permalink: /about
             document.getElementById("stackoverflow__gold-badge").innerHTML = item.badge_counts.gold
           }
         });
+      })
+    axios.get('https://lichess.org/api/user/kheitmann')
+      .then(response => {
+        const {data} = response;
+        console.log(data)
       })
   </script>
 </div>
