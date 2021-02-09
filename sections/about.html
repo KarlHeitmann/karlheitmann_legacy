@@ -68,7 +68,7 @@ permalink: /about
       </p>
     </div>
     <div class="about-lichess-profile">
-      <p><strong>Perfil: </strong><span><a id="about-lichess-profile__username-link" href=""></a></span></p>
+      <p><strong>Perfil: </strong><span><a id="about-lichess-profile__username-link" href="https://lichess.org/@/kheitmann">kheitmann</a></span></p>
       <p><strong>Fecha de creación: </strong><span id="about-lichess-profile-created-at"></span></p>
       <p><strong>Tiempo de juego: </strong><span id="about-lichess-profile__username-playtime"></span></p>
       <p><strong>Seguidores: </strong><span id="about-lichess-profile__username-followers"></span></p>
@@ -118,7 +118,7 @@ permalink: /about
     axios.get('https://lichess.org/api/user/kheitmann')
       .then(response => {
         const {data} = response;
-        // console.log(data);
+        console.log(data);
         // var utcSeconds = data.createdAt;
         var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
         d.setUTCSeconds(data.createdAt / 1000);
