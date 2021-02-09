@@ -27,6 +27,7 @@ permalink: /about
       <img alt="Github profile" class="about-github__profile__image" id="github-img">
       <div class="about-github__profile__data">
         <p><strong>Perfil: </strong><span><a href="https://github.com/KarlHeitmann">Karl Heitmann</a></span></p>
+        <p><strong>Creación: </strong><span id="github-created-at"></span></p>
         <p><strong>Seguidores: </strong><span id="github-followers"></span></p>
         <p><strong>Siguiendo: </strong><span id="github-following"></span></p>
       </div>
@@ -87,6 +88,10 @@ permalink: /about
           followers,
           following,
         } = data;
+        // var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+        // d.setUTCSeconds(data.created_at);
+        // document.getElementById("github-created-at").innerHTML = d.toLocaleString();
+        document.getElementById("github-created-at").innerHTML = new Date(data.created_at).toLocaleString();
         document.getElementById("github-img").setAttribute("src", avatar_url);
         document.getElementById("github-followers").innerHTML = followers;
         document.getElementById("github-following").innerHTML = following;
@@ -94,7 +99,7 @@ permalink: /about
     axios.get('https://api.stackexchange.com/2.2/users/2101187?order=desc&sort=reputation&site=stackoverflow')
       .then(response => {
         const {data} = response;
-        console.log(data)
+        // console.log(data)
         const {items} = data;
         // console.log(items);
         items.forEach(item => {
