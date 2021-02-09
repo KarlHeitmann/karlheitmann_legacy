@@ -12,6 +12,9 @@ permalink: /about
     <p>
       A continuación, unos datos de mis perfiles en otros sitios:
     </p>
+    <p>
+      <a href="http://www.karlheitmann.com/" target="_blank" rel="noopener noreferrer">Aquí está mi página en WordPress</a>, donde puedes ver una galería de las cosas que he hecho con esa herramienta.
+    </p>
   </div>
   <div class="about-github">
     <div class="about-github__img-background">
@@ -23,6 +26,8 @@ permalink: /about
     <div class="about-github__profile">
       <img alt="Github profile" class="about-github__profile__image" id="github-img">
       <div class="about-github__profile__data">
+        <p><strong>Perfil: </strong><span><a href="https://github.com/KarlHeitmann">Karl Heitmann</a></span></p>
+        <p><strong>Creación: </strong><span id="github-created-at"></span></p>
         <p><strong>Seguidores: </strong><span id="github-followers"></span></p>
         <p><strong>Siguiendo: </strong><span id="github-following"></span></p>
       </div>
@@ -42,10 +47,33 @@ permalink: /about
         alt="Stackoverflow profile"
         id="stackoverflow__img">
       <div class="about-stackoverflow__badges">
+        <p><strong>Perfil: </strong><span><a href="https://stackoverflow.com/users/2101187/karl">Karl Heitmann</a></span></p>
+        <p><strong>Creación: </strong><span id="stackoverflow__created-at"></span></p>
         <p><strong>Medallas de bronze: </strong><span id="stackoverflow__bronze-badge"></span></p>
         <p><strong>Medallas de plata: </strong><span id="stackoverflow__silver-badge"></span></p>
         <p><strong>Medallas de oro: </strong><span id="stackoverflow__gold-badge"></span></p>
       </div>
+    </div>
+  </div>
+  <div class="about-lichess">
+    <div class="about-lichess__logo">
+      <div class="about-lichess__logo-background">
+        <img
+          src="assets/img/logos/lichess_improved_logo.svg"
+          class="about-lichess__logo-background__image"
+          alt="Lichess logo">
+      </div>
+      <p class="about-lichess__logo-text">
+        lichess.org
+      </p>
+    </div>
+    <div class="about-lichess-profile">
+      <p><strong>Perfil: </strong><span><a id="about-lichess-profile__username-link" href=""></a></span></p>
+      <p><strong>Fecha de creación: </strong><span id="about-lichess-profile-created-at"></span></p>
+      <p><strong>Tiempo de juego: </strong><span id="about-lichess-profile__username-playtime"></span></p>
+      <p><strong>Seguidores: </strong><span id="about-lichess-profile__username-followers"></span></p>
+      <p><strong>Siguiendo: </strong><span id="about-lichess-profile__username-following"></span></p>
+      <p><strong>Puntaje: </strong><span id="about-lichess-profile__username-score"></span></p>
     </div>
   </div>
   <script>
@@ -60,6 +88,10 @@ permalink: /about
           followers,
           following,
         } = data;
+        // var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+        // d.setUTCSeconds(data.created_at);
+        // document.getElementById("github-created-at").innerHTML = d.toLocaleString();
+        document.getElementById("github-created-at").innerHTML = new Date(data.created_at).toLocaleString();
         document.getElementById("github-img").setAttribute("src", avatar_url);
         document.getElementById("github-followers").innerHTML = followers;
         document.getElementById("github-following").innerHTML = following;
@@ -67,19 +99,45 @@ permalink: /about
     axios.get('https://api.stackexchange.com/2.2/users/2101187?order=desc&sort=reputation&site=stackoverflow')
       .then(response => {
         const {data} = response;
-        console.log(data)
+        // console.log(data)
         const {items} = data;
-        console.log(items);
+        // console.log(items);
         items.forEach(item => {
-          console.log(item)
+          // console.log(item)
           if (item.display_name == 'Karl') {
-            // debugger;
+            var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+            d.setUTCSeconds(item.creation_date);
+            document.getElementById("stackoverflow__created-at").innerHTML = d.toLocaleString();
             document.getElementById("stackoverflow__img").setAttribute("src", item.profile_image)
             document.getElementById("stackoverflow__bronze-badge").innerHTML = item.badge_counts.bronze
             document.getElementById("stackoverflow__silver-badge").innerHTML = item.badge_counts.silver
             document.getElementById("stackoverflow__gold-badge").innerHTML = item.badge_counts.gold
           }
         });
+      })
+    axios.get('https://lichess.org/api/user/kheitmann')
+      .then(response => {
+        const {data} = response;
+        // console.log(data);
+        // var utcSeconds = data.createdAt;
+        var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+        d.setUTCSeconds(data.createdAt / 1000);
+        // document.getElementById("about-lichess-profile-created-at").innerHTML = d.toLocaleString();
+        document.getElementById("about-lichess-profile-created-at").innerHTML = d.toLocaleString();
+        document.getElementById("about-lichess-profile__username-followers").innerHTML = data.nbFollowers;
+        document.getElementById("about-lichess-profile__username-following").innerHTML = data.nbFollowing;
+        let {total} = data.playTime;
+        let playtime = `${Math.round(total / 3600)}:${Math.round(total / 60) % 60}:${total % 60}`
+        document.getElementById("about-lichess-profile__username-playtime").innerHTML = playtime;
+        // document.getElementById("about-lichess-profile__username-score").innerHTML = (data.playTime.total / 60);
+
+        let keys = Object.keys(data["perfs"])
+        const suma_puntaje = keys.reduce((prev, key) => {
+          return prev += Number(data['perfs'][key]['rating']);
+        }, 0)
+        document.getElementById("about-lichess-profile__username-score").innerHTML = (suma_puntaje / keys.length);
+        // console.log(suma_puntaje / keys.length)
+        // console.log(data)
       })
   </script>
 </div>
