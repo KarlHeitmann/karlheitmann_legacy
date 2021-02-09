@@ -47,6 +47,7 @@ permalink: /about
         id="stackoverflow__img">
       <div class="about-stackoverflow__badges">
         <p><strong>Perfil: </strong><span><a href="https://stackoverflow.com/users/2101187/karl">Karl Heitmann</a></span></p>
+        <p><strong>Creación: </strong><span id="stackoverflow__created-at"></span></p>
         <p><strong>Medallas de bronze: </strong><span id="stackoverflow__bronze-badge"></span></p>
         <p><strong>Medallas de plata: </strong><span id="stackoverflow__silver-badge"></span></p>
         <p><strong>Medallas de oro: </strong><span id="stackoverflow__gold-badge"></span></p>
@@ -99,7 +100,9 @@ permalink: /about
         items.forEach(item => {
           // console.log(item)
           if (item.display_name == 'Karl') {
-            // debugger;
+            var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+            d.setUTCSeconds(item.creation_date);
+            document.getElementById("stackoverflow__created-at").innerHTML = d.toLocaleString();
             document.getElementById("stackoverflow__img").setAttribute("src", item.profile_image)
             document.getElementById("stackoverflow__bronze-badge").innerHTML = item.badge_counts.bronze
             document.getElementById("stackoverflow__silver-badge").innerHTML = item.badge_counts.silver
@@ -110,10 +113,11 @@ permalink: /about
     axios.get('https://lichess.org/api/user/kheitmann')
       .then(response => {
         const {data} = response;
-        console.log(data);
-        var utcSeconds = data.createdAt;
+        // console.log(data);
+        // var utcSeconds = data.createdAt;
         var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
-        d.setUTCSeconds(utcSeconds / 1000);
+        d.setUTCSeconds(data.createdAt / 1000);
+        // document.getElementById("about-lichess-profile-created-at").innerHTML = d.toLocaleString();
         document.getElementById("about-lichess-profile-created-at").innerHTML = d.toLocaleString();
         document.getElementById("about-lichess-profile__username-followers").innerHTML = data.nbFollowers;
         document.getElementById("about-lichess-profile__username-following").innerHTML = data.nbFollowing;
