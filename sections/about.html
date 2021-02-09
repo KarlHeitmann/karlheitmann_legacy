@@ -118,7 +118,12 @@ permalink: /about
         document.getElementById("about-lichess-profile__username-playtime").innerHTML = playtime;
         // document.getElementById("about-lichess-profile__username-score").innerHTML = (data.playTime.total / 60);
 
-        // const
+        let keys = Object.keys(data["perfs"])
+        const suma_puntaje = keys.reduce((prev, key) => {
+          return prev += Number(data['perfs'][key]['rating']);
+        }, 0)
+        document.getElementById("about-lichess-profile__username-score").innerHTML = (suma_puntaje / keys.length);
+        console.log(suma_puntaje / keys.length)
         console.log(data)
       })
   </script>
