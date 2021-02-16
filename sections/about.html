@@ -49,6 +49,7 @@ permalink: /about
       <div class="about-stackoverflow__badges">
         <p><strong>Perfil: </strong><span><a href="https://stackoverflow.com/users/2101187/karl">Karl Heitmann</a></span></p>
         <p><strong>Creación: </strong><span id="stackoverflow__created-at"></span></p>
+        <p><strong>Reputación: </strong><span id="stackoverflow__reputation"></span></p>
         <p><strong>Medallas de bronze: </strong><span id="stackoverflow__bronze-badge"></span></p>
         <p><strong>Medallas de plata: </strong><span id="stackoverflow__silver-badge"></span></p>
         <p><strong>Medallas de oro: </strong><span id="stackoverflow__gold-badge"></span></p>
@@ -109,6 +110,7 @@ permalink: /about
             d.setUTCSeconds(item.creation_date);
             document.getElementById("stackoverflow__created-at").innerHTML = d.toLocaleString();
             document.getElementById("stackoverflow__img").setAttribute("src", item.profile_image)
+            document.getElementById("stackoverflow__reputation").innerHTML = item.reputation
             document.getElementById("stackoverflow__bronze-badge").innerHTML = item.badge_counts.bronze
             document.getElementById("stackoverflow__silver-badge").innerHTML = item.badge_counts.silver
             document.getElementById("stackoverflow__gold-badge").innerHTML = item.badge_counts.gold
