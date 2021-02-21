@@ -28,6 +28,10 @@ sidebar: sidebar/proyectos.html
     let div_proyecto = document.createElement('div');
     // div_proyecto.innerText = repo.html_url;
 
+    let p_descripcion = document.createElement('p');
+    var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+    p_descripcion.innerText = `Descripción: ${repo.description}`
+
     let p_date = document.createElement('p');
     var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
     p_date.innerText = `Fecha de creación: ${new Date(repo.created_at).toLocaleString()}`
@@ -37,6 +41,7 @@ sidebar: sidebar/proyectos.html
     a_link.innerText = repo.name;
 
     div_proyecto.appendChild(a_link);
+    div_proyecto.appendChild(p_descripcion);
     div_proyecto.appendChild(p_date);
 
     let galeria = document.getElementById('galeria-proyectos-github');
