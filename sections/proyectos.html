@@ -19,13 +19,23 @@ sidebar: sidebar/proyectos.html
 
     </div>
     <script>
+      function displayRepo(repo) {
+        // console.log(repo);
+        // console.log(repo.html_url, Object.keys(repo));
+      }
       async function getRepos(page) {
         const response = await axios.get(`https://api.github.com/users/KarlHeitmann/repos?type=owner&page=${page}&per_page=100`);
         const {data} = response;
         if (data.length == 0) {
           return 0;
         } else if (data.length < 100) {
-          console.log('FINAL REQUEST', data);
+          // console.log('FINAL REQUEST', data);
+          repos = data.filter(d => !(d.fork));
+          console.log('FINAL REQUEST', repos)
+          repos.forEach(repo => {
+            displayRepo(repo)
+          });
+          const privados = data.filter(d=> d.private);
           return 0;
         } else {
           console.log('FALTAN REPOS', data);
@@ -34,12 +44,6 @@ sidebar: sidebar/proyectos.html
         }
       }
       getRepos(1)
-      // axios.get('https://api.github.com/users/KarlHeitmann')
-      // axios.get('https://api.github.com/users/KarlHeitmann/repos?type=owner&page=1&per_page=100');
-      // .then(response => {
-      //   const {data} = response;
-      //   console.log(data);
-      // })
     </script>
   </div>
 
