@@ -74,7 +74,11 @@ sidebar: sidebar/proyectos.html
   }
 
   function filtrarRepos(repos) {
-    repos = repos.filter(repo => !(repo.fork));
+    repos = repos.filter(
+      repo => !(repo.fork) && !(repo.archived) &&
+      (repo.name != 'karlheitmann') &&
+      (repo.name != 'KarlHeitmann.github.io')
+    );
     repos.forEach(repo => {
       displayRepo(repo)
     });
