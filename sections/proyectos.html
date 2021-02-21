@@ -24,9 +24,17 @@ sidebar: sidebar/proyectos.html
     // console.log(repo);
     // console.log(repo.html_url, Object.keys(repo));
     console.log(repo);
-    let galeria = document.getElementById('galeria-proyectos-github');
+
     let div_proyecto = document.createElement('div');
-    div_proyecto.innerText = repo.html_url;
+    // div_proyecto.innerText = repo.html_url;
+
+    let a_link = document.createElement('a');
+    a_link.setAttribute("href", repo.html_url);
+    a_link.innerText = repo.name;
+
+    div_proyecto.appendChild(a_link);
+
+    let galeria = document.getElementById('galeria-proyectos-github');
     galeria.appendChild(div_proyecto);
   }
 
