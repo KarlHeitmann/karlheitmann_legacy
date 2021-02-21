@@ -15,13 +15,28 @@ sidebar: sidebar/proyectos.html
   </p>
 
   <div class="galeria-proyectos-github">
-    <div class="galeria-proyectos-github__proyecto">
+    <div
+      id="galeria-proyectos-github"
+      class="galeria-proyectos-github__proyecto"
+      >
 
     </div>
     <script>
       function displayRepo(repo) {
         // console.log(repo);
         // console.log(repo.html_url, Object.keys(repo));
+        console.log(repo);
+        let galeria = document.getElementById('galeria-proyectos-github');
+        let div_proyecto = document.createElement('div');
+        div_proyecto.innerText = repo.html_url;
+        galeria.appendChild(div_proyecto);
+      }
+
+      function filtrarRepos(repos) {
+        repos = repos.filter(repo => !(repo.fork));
+        repos.forEach(repo => {
+          displayRepo(repo)
+        });
       }
       async function getRepos(page) {
         const response = await axios.get(`https://api.github.com/users/KarlHeitmann/repos?type=owner&page=${page}&per_page=100`);
@@ -30,15 +45,12 @@ sidebar: sidebar/proyectos.html
           return 0;
         } else if (data.length < 100) {
           // console.log('FINAL REQUEST', data);
-          repos = data.filter(d => !(d.fork));
-          console.log('FINAL REQUEST', repos)
-          repos.forEach(repo => {
-            displayRepo(repo)
-          });
-          const privados = data.filter(d=> d.private);
+          console.log('FINAL REQUEST', data);
+          filtrarRepos(data);
           return 0;
         } else {
           console.log('FALTAN REPOS', data);
+          filtrarRepos(data);
           getRepos(page + 2);
           return 0;
         }
