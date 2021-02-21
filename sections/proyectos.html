@@ -39,6 +39,11 @@ sidebar: sidebar/proyectos.html
       .replaceAll('_', ' ');
     a_link.setAttribute('class', 'galeria-proyecto__link');
 
+    let a_link_2 = document.createElement('a');
+    a_link_2.setAttribute("href", repo.html_url);
+    a_link_2.setAttribute('class', 'galeria-proyecto__link');
+    a_link_2.innerText = "VER"
+
     let p_descripcion = document.createElement('p');
     p_descripcion.innerText = `Descripción: ${repo.description}`
 
@@ -54,8 +59,15 @@ sidebar: sidebar/proyectos.html
     let p_vigilas = document.createElement('p');
     p_vigilas.innerText = `Vigilas: ${repo.watchers} | Número de vigilas: ${repo.watchers_count}`;
 
-    let p_homepage = document.createElement('p');
-    p_homepage.innerText = `Página de inicio: ${repo.homepage ? repo.homepage : ''}`;
+    let a_homepage
+    if (repo.homepage) {
+      a_homepage = document.createElement('a');
+      a_homepage.setAttribute("href", repo.homepage);
+      a_homepage.innerText = `Página de inicio`;
+    } else {
+      a_homepage = document.createElement('p');
+      a_homepage.innerText = `Página de inicio`;
+    }
 
     let p_tamano = document.createElement('p');
     p_tamano.innerText = `Tamaño: ${repo.size}`;
@@ -66,8 +78,9 @@ sidebar: sidebar/proyectos.html
     div_proyecto.appendChild(p_forks);
     div_proyecto.appendChild(p_estrellas);
     div_proyecto.appendChild(p_vigilas);
-    div_proyecto.appendChild(p_homepage);
+    div_proyecto.appendChild(a_homepage);
     div_proyecto.appendChild(p_tamano);
+    div_proyecto.appendChild(a_link_2);
 
     let galeria = document.getElementById('galeria-proyectos-github');
     galeria.appendChild(div_proyecto);
