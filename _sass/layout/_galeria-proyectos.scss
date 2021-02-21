@@ -1,0 +1,5 @@
+.galeria-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  &__heading {}
+}

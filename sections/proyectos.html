@@ -7,16 +7,54 @@ sidebar: sidebar/proyectos.html
 ---
 
 
+<div class="galeria-proyectos">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <p class="galeria-proyectos__paragraph">
+    En este segmento están mis proyectos destacados de github, sus códigos fuentes y links a algunas demostraciones
+  </p>
+
+  <div class="galeria-proyectos-github">
+    <div class="galeria-proyectos-github__proyecto">
+
+    </div>
+    <script>
+      async function getRepos(page) {
+        const response = await axios.get(`https://api.github.com/users/KarlHeitmann/repos?type=owner&page=${page}&per_page=100`);
+        const {data} = response;
+        if (data.length == 0) {
+          return 0;
+        } else if (data.length < 100) {
+          console.log('FINAL REQUEST', data);
+          return 0;
+        } else {
+          console.log('FALTAN REPOS', data);
+          getRepos(page + 2);
+          return 0;
+        }
+      }
+      getRepos(1)
+      // axios.get('https://api.github.com/users/KarlHeitmann')
+      // axios.get('https://api.github.com/users/KarlHeitmann/repos?type=owner&page=1&per_page=100');
+      // .then(response => {
+      //   const {data} = response;
+      //   console.log(data);
+      // })
+    </script>
+  </div>
+
+  <div class="galeria-proyectos__proyectos"></div>
+    <h1>WordPress</h1>
+  </div>
+
+</div>
+
+
+
 <div class="noticias">
-  <!-- <div class="noticias__heading">
-    Noticias
-  </div> -->
   <h1 class="noticias__btn">
-  </h1>
-  <h1 class="noticias__subheading">
     Esta es la parte más aterrizada de la página. Son proyectos que he hecho, que son públicos y que sirven para algo.
   </h1>
-
   <div class="noticia">
     <h1 class="noticia__heading">
       Perfil en Workana
