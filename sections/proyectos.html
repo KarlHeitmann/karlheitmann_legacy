@@ -26,7 +26,18 @@ sidebar: sidebar/proyectos.html
     console.log(repo);
 
     let div_proyecto = document.createElement('div');
+    div_proyecto.setAttribute('class', 'galeria-proyecto');
     // div_proyecto.innerText = repo.html_url;
+
+    let a_link = document.createElement('a');
+    a_link.setAttribute("href", repo.html_url);
+
+    const nombre = repo.name.charAt(0).toUpperCase() + repo.name.slice(1)
+
+    a_link.innerText = nombre
+      .replaceAll('-', ' ')
+      .replaceAll('_', ' ');
+    a_link.setAttribute('class', 'galeria-proyecto__link');
 
     let p_descripcion = document.createElement('p');
     p_descripcion.innerText = `Descripción: ${repo.description}`
@@ -48,10 +59,6 @@ sidebar: sidebar/proyectos.html
 
     let p_tamano = document.createElement('p');
     p_tamano.innerText = `Tamaño: ${repo.size}`;
-
-    let a_link = document.createElement('a');
-    a_link.setAttribute("href", repo.html_url);
-    a_link.innerText = repo.name;
 
     div_proyecto.appendChild(a_link);
     div_proyecto.appendChild(p_descripcion);
