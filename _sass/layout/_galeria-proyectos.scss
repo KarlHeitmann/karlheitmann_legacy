@@ -1,5 +1,11 @@
 .galeria-proyectos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-  &__heading {}
+  grid-gap: 1.5rem;
+  &__heading {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+    font-size: 2.5rem;
+  }
 }
