@@ -13,6 +13,8 @@ sidebar: sidebar/proyectos.html
   class="galeria-proyectos">
 
   <h1 class="galeria-proyectos__heading">
+    <strong>BAJO CONSTRUCCIÓN</strong>
+    <br>
     En este segmento están mis proyectos destacados de github, sus códigos fuentes y links a algunas demostraciones
   </h1>
 
@@ -37,10 +39,12 @@ sidebar: sidebar/proyectos.html
     a_link.innerText = nombre
       .replaceAll('-', ' ')
       .replaceAll('_', ' ');
+    a_link.setAttribute('target', '_blank');
     a_link.setAttribute('class', 'galeria-proyecto__link');
 
     let a_link_2 = document.createElement('a');
     a_link_2.setAttribute("href", repo.html_url);
+    a_link_2.setAttribute('target', '_blank');
     a_link_2.setAttribute('class', 'galeria-proyecto__link');
     a_link_2.innerText = "VER"
 
@@ -63,6 +67,8 @@ sidebar: sidebar/proyectos.html
     if (repo.homepage) {
       a_homepage = document.createElement('a');
       a_homepage.setAttribute("href", repo.homepage);
+      a_homepage.setAttribute('target', '_blank');
+      a_homepage.setAttribute('class', 'galeria-proyecto__link');
       a_homepage.innerText = `Página de inicio`;
     } else {
       a_homepage = document.createElement('p');
