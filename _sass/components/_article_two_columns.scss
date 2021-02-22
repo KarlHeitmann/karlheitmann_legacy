@@ -1,0 +1,5 @@
+.article-two-columns {
+  display: grid;
+
+  grid-template-columns: minmax(80rem, 1fr) minmax(80rem, 1fr);
+}
