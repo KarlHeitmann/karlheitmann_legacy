@@ -37,7 +37,7 @@
     margin: 5rem 0px;
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding: 1rem 1rem;
   }
 }

@@ -29,4 +29,8 @@
       border-radius: 50%;
     }
   }
+
+  @include respond(tab-port) {
+    margin: 1rem 1rem;
+  }
 }
