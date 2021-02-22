@@ -2,9 +2,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   grid-gap: 1.5rem;
-  height: 50vh;
+  height: 0px;
   overflow-y: scroll;
-  padding-bottom: 2rem;
+  padding-bottom: 0px;
+  margin: 5rem 0px;
   border-bottom: 1px solid black;
   &__heading {
     grid-column: 1 / -1;
@@ -13,6 +14,54 @@
     font-size: 2.5rem;
   }
 
+  &--show {
+    height: 50vh;
+    padding-bottom: 2rem;
+  }
+  // transition: all .8s;
+  // transition: all .8s cubic-bezier(1,.01,0,.99);
+  transition: all 1.3s cubic-bezier(1,.01,0,.99);
+}
+
+.proyectos-github-container {
+  padding: 1rem 15rem;
+  margin-bottom: 2rem;
+
+  &__header {
+    margin: 1rem 0px;
+    font-family: $font-display;
+    color: var(--color-secondary-light-1);
+  }
+
+  &__paragraph {
+    margin: 5rem 0px;
+  }
+
+}
+
+.btn-ver-proyectos {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: var(--color-grey-light-4);
+  background-color: var(--color-primary-light-1);
+  font-size: 2.25rem;
+  &:hover {
+    background-color: var(--color-primary-light-2);
+  }
+  // &:hover,
+  // .galeria-proyectos:hover {
+  //   height: 100px !important;
+  // }
+  // &:hover ~ .galeria-proyectos:hover {
+  //   height: 100px !important;
+  // }
+
+  // &:hover ~ .galeria-proyectos:hover {
+  //   background-color: var(--color-primary-light-2);
+  //   height: 100px !important;
+  // }
 }
 
 .galeria-proyecto {
