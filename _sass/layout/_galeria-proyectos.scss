@@ -22,6 +22,18 @@
   transition: all 1.3s cubic-bezier(1,.01,0,.99);
 }
 
+.btn-ver-proyectos {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: var(--color-grey-light-4);
+  background-color: var(--color-primary-light-1);
+  &:hover {
+    background-color: var(--color-primary-light-2);
+  }
+}
+
 .galeria-proyecto {
   &__link:link,
   &__link:visited {
