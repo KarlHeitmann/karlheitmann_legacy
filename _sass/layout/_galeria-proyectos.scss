@@ -29,9 +29,22 @@
   border-radius: 10px;
   color: var(--color-grey-light-4);
   background-color: var(--color-primary-light-1);
+  font-size: 2.25rem;
   &:hover {
     background-color: var(--color-primary-light-2);
   }
+  // &:hover,
+  // .galeria-proyectos:hover {
+  //   height: 100px !important;
+  // }
+  // &:hover ~ .galeria-proyectos:hover {
+  //   height: 100px !important;
+  // }
+
+  // &:hover ~ .galeria-proyectos:hover {
+  //   background-color: var(--color-primary-light-2);
+  //   height: 100px !important;
+  // }
 }
 
 .galeria-proyecto {
