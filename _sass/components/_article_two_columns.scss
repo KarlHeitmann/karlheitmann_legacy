@@ -1,0 +1,18 @@
+.article-two-columns {
+  display: grid;
+
+  grid-template-columns: minmax(50rem, 1fr) minmax(50rem, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+
+  padding: 5rem 15rem;
+
+  @include respond(tab-port) {
+    grid-template-columns: minmax(30rem, 1fr);
+  }
+
+  & img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
