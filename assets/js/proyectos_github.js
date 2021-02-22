@@ -96,3 +96,21 @@ async function getRepos(page) {
   }
 }
 getRepos(1)
+
+document.getElementById("btn-ver-proyectos").onclick = () => {
+  console.log("click")
+  const galeriaProyectosGithub = document.getElementById('galeria-proyectos-github');
+  // const clases = galeriaProyectosGithub.getAttribute('class').split(' ');
+  const clases = galeriaProyectosGithub.classList;
+  let show = false
+  clases.forEach(clase => {
+    if (clase == 'galeria-proyectos--show') { show = true; }
+  });
+  if (show) {
+    galeriaProyectosGithub.setAttribute('class', 'galeria-proyectos')
+  } else {
+    galeriaProyectosGithub.setAttribute('class', 'galeria-proyectos galeria-proyectos--show')
+  }
+  console.log(clases)
+};
+
