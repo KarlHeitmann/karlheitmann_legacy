@@ -29,6 +29,8 @@
 
   &__header {
     margin: 1rem 0px;
+    font-family: $font-display;
+    color: var(--color-secondary-light-1);
   }
 
   &__paragraph {
