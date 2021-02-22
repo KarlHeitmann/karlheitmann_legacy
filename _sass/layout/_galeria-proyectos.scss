@@ -5,6 +5,7 @@
   height: 0px;
   overflow-y: scroll;
   padding-bottom: 0px;
+  margin: 5rem 0px;
   border-bottom: 1px solid black;
   &__heading {
     grid-column: 1 / -1;
@@ -20,6 +21,20 @@
   // transition: all .8s;
   // transition: all .8s cubic-bezier(1,.01,0,.99);
   transition: all 1.3s cubic-bezier(1,.01,0,.99);
+}
+
+.proyectos-github-container {
+  padding: 1rem 15rem;
+  margin-bottom: 2rem;
+
+  &__header {
+    margin: 1rem 0px;
+  }
+
+  &__paragraph {
+    margin: 5rem 0px;
+  }
+
 }
 
 .btn-ver-proyectos {
