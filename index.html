@@ -38,6 +38,17 @@ subtitle: Karl Heitmann
   </p>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+  // const response = await axios.get(`https://api.github.com/users/KarlHeitmann/repos?type=owner&page=${page}&per_page=100`);
+  axios.get(`https://gateway.starken.cl/tracking/orden-flete-dte/of/1232134`)
+    .then(resp => {
+      console.log(resp)
+    })
+
+</script>
+
 
 
 <div class="noticias">
@@ -80,7 +91,7 @@ subtitle: Karl Heitmann
     <p class="noticia__paragraph">
       {{t.noticias.noticia2.p}}
     </p>
-    <a href="/proyectos/workana.html">
+    <a href="/artes/tango.html">
       {{t.noticias.noticia2.link}}
     </a>
     <figure class="noticia__figure">
