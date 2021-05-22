@@ -1,0 +1,55 @@
+---
+layout: page
+title: Estudios
+subtitle: Fractales
+menus: header
+permalink: /estudios/fractales_intro
+---
+
+<div class="estudios-flexbox">
+  <div>
+    <p>
+      Otro asunto que me interesa es el de los fractales. Buscando en internet encontré el
+      <a href="https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2020-2021/Makalah/Makalah-Matdis-2020%20(123).pdf" target="_blank">siguiente enlace</a>
+      que es un estudio publicado por un estudiante hindú de informática. El paper se trata de curvas fractales y la recursividad.
+    </p>
+    <p>
+      Inspirado en uno de los ejemplos citados en el paper, decidí hacer una aplicación web para dibujar uno de estos fractales. La aplicación web la hice en Vue.JS,
+      una tecnología que no domino tan bien, pero que quise aprovechar el problema para practicar un poco. La aplicación ofrece algunos parámetros que uno puede
+      ir cambiando, y con eso uno puede dibujar un fractal más grande, o mejorar la resolución.
+    </p>
+    <p>
+      El fractal que se dibuja es el <strong>Fibonacci Word Fractal.</strong> El Fibonacci Word es una palabra que se calcula siguiendo la secuencia fibonacci:
+      tomar los dos números fibonacci anteriores y sumarlos, solo que como estamos trabajando acá con una palabra, la suma debe ser ligeramente distinta. Vamos con un ejemplo.
+    </p>
+    <p>
+      La primera palabra fibonacci es a palabra "0", y la segunda palabra fibonacci es la palabra "01". Estas son las únicas dos palabras fibonacci definidas,
+      el resto se debe ir calculando. ¿Cómo sumar estas palabras? Se deben simplemente pegar, una al lado de la otra. Mire el ejemplo
+      <ol>
+        <li>0</li>
+        <li>01</li>
+        <li>010</li>
+        <li>01001</li>
+        <li>01001010</li>
+        <li>0100101001001</li>
+        <li>etc</li>
+      </ol>
+    </p>
+    <p>
+      Ahora bien, ¿Cómo dibujar el fractal? Digamos que yo tomo la palabra fibonacci #7: 0100101001001. Ahora, lo que debo hacer, es dibujar un segmento por cada
+      caracter que tiene la palabra solo que siguiendo una simple regla: si el caracter es cero, girar en sentido antihorario si ese cero se
+      encuentra en una posición par, o girar en sentido horario si ese cero se encuentra en una posición impar dentro de la lista de caracteres que conforman la
+      palabra.
+    </p>
+    <p>
+      Para ver la aplicación y como se dibuja el fractal, ingrese al
+      <a href="/estudios/fractal.html" target="_blank">siguiente enlace...</a>
+    </p>
+  </div>
+
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+</div>
