@@ -1,0 +1,63 @@
+---
+layout: page
+title: Estudios.
+subtitle: Fractal Refactorization Methodology.
+menus: header
+permalink: /estudios/fractal_refactorization_methodology
+---
+  
+<div class="estudios-flexbox">
+  <div>
+    The fractal refactorization methodology follows a simple rule. This formula works well with vue.js framework and its composition API, because composition API enables you to disconnect the logic of your code in independent functions (pure functions), instead of working with OOP, where all the methods are encapsulated in a single class.
+    
+    It is not yet tested on React, but it should work with React Hooks, not with React class components.
+
+    Check <a href="https://github.com/KarlHeitmann/fractal_refactorization_example" target="_blank" rel="noopener noreferrer">this example repo</a>, here I built
+    the application in Vue.js using Composition API and following a fractal refactorization methodology. <strong>It is only an example to show
+    how to follow a fractal refactorization approach, the app is made on purpose without following rules of clean code, not SOLID principles.
+    It is meant to show how you can write better code ONLY by using this approach. In real world applications, you MUST follow all rules and guidelines.
+    You have to use all tools available in your toolbelt.
+    </strong>
+
+    Here you have a <a href="https://youtu.be/gf_kUAyzptg" target="_blank" rel="noopener noreferrer">youtube screencast</a> explains this.
+
+    This is the method:
+
+    <ol>
+      <li>Write your component with extension .vue</li>
+      <li>Has the component more than 300 lines of code? Yes, follow the next step. No, return to step 1 and continue writing awesome code.</li>
+      <li>Make a commit so your working tree will get clean.</li>
+      <li>Make a new folder with the same name as your target file without the .vue extension</li>
+      <li>Move your component inside this new folder</li>
+      <li>Modify the name of your file inside the new folder and call it <strong>index.vue</strong>, fix the route that calls this component on the parent components.</li>
+      <li>Verify that everything is OK. Did all the tests pass? They should be passing, there is only a route that was modified</li>
+      <li>
+        <strong>Here we'll begin working in fractals. It may be necessary to create many new fractal components inside the new folder, siblings to index.vue. From this point onwards, we'll be fractalizing.</strong>
+        <ol >
+          <li style="list-style-type: lower-latin;">Examine your index.vue file, search the HTML node which has many nodes inside.</li>
+          <li style="list-style-type: lower-latin;">Make a new file, call it by a name related to what does that node HTML and add a .vue extension</li>
+          <li style="list-style-type: lower-latin;">Move the HTML node from index.vue to the recently created file, move the logic associated to that HTML node in the script section into this new file</li>
+          <li style="list-style-type: lower-latin;">
+            Check that everything is still working. Maybe you will need to add some <pre>emit</pre> into the new component. If everything is OK, make a commit and continue. If there are broken things, continue fixing the errors.
+            A good test suite will help you verify that you will not broke anything with this refactorization.
+          </li>
+          <li style="list-style-type: lower-latin;">If index.vue file still has a lot of HTML nodes, return to step <pre style="display: inline;">a</pre> of this section.</li>
+        </ol>
+      </li>
+      <li>
+        Refactorization is ready, continue writing code to accomplish the specs of your project. If you got another file that grows very complex, turn it into a folder and repeat the steps of this guide.
+      </li>
+    
+    </ol>
+  </div>
+
+  <div></div>
+
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+</div>
+
+

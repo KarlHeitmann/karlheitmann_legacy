@@ -1,0 +1,54 @@
+---
+layout: page
+title: Estudios.
+subtitle: Metodología de la Refactorización Fractal.
+menus: header
+permalink: /estudios/metodologia_fractal_refactorization
+---
+
+<div class="estudios-flexbox">
+  <div>
+    La metodología de refactorización fractal sigue una fórmula bastante simple. Esta fórmula funciona con el framework Vue.JS y con Composition API, dado que Composition API permite
+    desacoplar la lógica del código en funciones independientes, en lugar de trabajar con POO donde están todos los métodos encapsulados en clases.
+
+    El <a href="https://github.com/KarlHeitmann/fractal_refactorization_example" target="_blank" rel="noopener noreferrer">siguiente proyecto</a> lo construí  en Vue.js usando Composition API y siguiendo una metodología de refactorización fractal. <strong>Es solo un ejemplo para ilustrar la refactorización fractal, la app la hice a propósito sin seguir lineamientos de código limpio, ni principios SOLID. El propósito es de mostrar que tú puedes escribir mejor código SOLAMENTE usando esta forma de abordar el problema. En aplicaciones del mundo real, tú DEBES seguir reglas y lineamientos en combinación con la refactorización fractal. Debes usar todas las herramientas disponibles en tu caja de herramientas.</strong>
+
+    Aquí hay un <a href="https://youtu.be/dvQC7IsSsEw" target="_blank" rel="noopener noreferrer">video</a> que explica esto: 
+
+    <ol>
+      <li>Escriba un componente con extensión .vue</li>
+      <li>¿El componente tiene más de 250 línea? Si, siga al siguiente paso. No, continue escribiendo</li>
+      <li>Haga un commit para quedar con su working tree limpio</li>
+      <li>Haga una carpeta con el mismo nombre del archivo</li>
+      <li>Mueva el componente grande dentro de la carpeta recién creada</li>
+      <li>Modifique el nombre del archivo dentro de la carpeta con el nombre <strong>index.vue</strong>, y corrija la ruta del componente que renderiza el componente en el que se está trabajando</li>
+      <li>Verifique que todo está bien, y haga un commit</li>
+      <li>
+        <strong>Aquí se separa en componentes fractales. Puede ser necesario crear varios componentes fractales que se encuentren en la misma carpeta del archivo nuevo index.vue. Por eso fractalizaremos también este punto</strong>
+        <ol>
+          <li style="list-style-type: lower-latin;">Examine el archivo index.vue, busque el nodo HTML que contenga más nodos al interior</li>
+          <li style="list-style-type: lower-latin;">Haga un archivo nuevo, bautícelo con un nombre relacionado a lo que hace ese nodo HTML y con extensión .vue.</li>
+          <li style="list-style-type: lower-latin;">Mueva el tag HTML a este archivo recien creado, mueva la lógica asociada a este nodo HTML al archivo nuevo.</li>
+          <li style="list-style-type: lower-latin;">
+            Compruebe que todo sigue funcionando, quizás tenga que agregar algunos <pre>emit</pre> al nuevo componente. Si todo sigue funcionando bien, haga un commit y continue. Si hay cosas rotas, siga corrigiendo errores.
+            Tener un test suite acá puede ser de gran utilidad.
+          </li>
+          <li style="list-style-type: lower-latin;">Si el archivo index.vue todavía le quedan muchos nodos HTML, vuelva al punto <pre style="display: inline;">a</pre> de este sublistado</li>
+        </ol>
+      </li>
+      <li>
+        Refactorización lista, siga ampliando la carpeta del componente completando los archivos de acuerdo a las especificaciones del proyecto. Cuando alguno de los componentes dentro de la carpeta crezca demasiado
+        y se vuelva difícil de manejar debido a su tamaño. Vuelva al punto dos de esta metodología.
+      </li>
+    
+    </ol>
+  </div>
+
+  <div></div>
+
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+</div>
