@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is my brand new personal site. You will find information about me, my interests
   what are my skills and much more
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://karlheitmann.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://karlheitmann.github.io/karlheitmann_legacy" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  KarlHeitmann
 tagline: Una página web donde coloco mi curriculum y algunas reflexiones personales. Viva el capitalismo.
 # Build settings
