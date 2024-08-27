@@ -1,8 +1,4 @@
 function displayRepo(repo) {
-  // console.log(repo);
-  // console.log(repo.html_url, Object.keys(repo));
-  console.log(repo);
-
   let div_proyecto = document.createElement('div');
   div_proyecto.setAttribute('class', 'galeria-proyecto');
   // div_proyecto.innerText = repo.html_url;
@@ -84,12 +80,9 @@ async function getRepos(page) {
   if (data.length == 0) {
     return 0;
   } else if (data.length < 100) {
-    // console.log('FINAL REQUEST', data);
-    console.log('FINAL REQUEST', data);
     filtrarRepos(data);
     return 0;
   } else {
-    console.log('FALTAN REPOS', data);
     filtrarRepos(data);
     getRepos(page + 2);
     return 0;
@@ -98,7 +91,6 @@ async function getRepos(page) {
 getRepos(1)
 
 document.getElementById("btn-ver-proyectos").onclick = () => {
-  console.log("click")
   const galeriaProyectosGithub = document.getElementById('galeria-proyectos-github');
   // const clases = galeriaProyectosGithub.getAttribute('class').split(' ');
   const clases = galeriaProyectosGithub.classList;
@@ -111,6 +103,5 @@ document.getElementById("btn-ver-proyectos").onclick = () => {
   } else {
     galeriaProyectosGithub.setAttribute('class', 'galeria-proyectos galeria-proyectos--show')
   }
-  console.log(clases)
 };
 

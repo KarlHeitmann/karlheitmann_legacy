@@ -14,7 +14,7 @@ permalink: /en/index
     <p>
       Español
     </p>
-    <a class="i18n__link" href="/">
+    <a class="i18n__link" href="{{ "/" | relative_url }}">
       <img
         class="i18n__img-flag"
         src="{{ site.baseurl }}/assets/svg/flags/012-spain.svg"
@@ -62,7 +62,7 @@ permalink: /en/index
     <p class="noticia__paragraph">
       {{t.noticias.noticia1.p}}
     </p>
-    <a href="/artes/tango.html">
+    <a href="{{ "/artes/tango.html" | relative_url }}">
       {{t.noticias.noticia1.link}}
     </a>
     <figure class="noticia__figure">
@@ -85,7 +85,7 @@ permalink: /en/index
     <p class="noticia__paragraph">
       {{t.noticias.noticia2.p}}
     </p>
-    <a href="/proyectos/workana.html">
+    <a href="{{ "/proyectos/workana.html" | relative_url }}">
       {{t.noticias.noticia2.link}}
     </a>
     <figure class="noticia__figure">

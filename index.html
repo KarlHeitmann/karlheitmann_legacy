@@ -13,7 +13,7 @@ subtitle: Karl Heitmann
     <p>
       English
     </p>
-    <a class="i18n__link" href="/en/index">
+    <a class="i18n__link" href="{{ "/en/index" | relative_url }}">
       <img
         class="i18n__img-flag"
         src="{{ site.baseurl }}/assets/svg/flags/002-united-states.svg"
@@ -40,17 +40,6 @@ subtitle: Karl Heitmann
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-<script>
-  // const response = await axios.get(`https://api.github.com/users/KarlHeitmann/repos?type=owner&page=${page}&per_page=100`);
-  axios.get(`https://gateway.starken.cl/tracking/orden-flete-dte/of/1232134`)
-    .then(resp => {
-      console.log(resp)
-    })
-
-</script>
-
-
-
 <div class="noticias">
   <!-- <div class="noticias__heading">
     Noticias
@@ -68,7 +57,7 @@ subtitle: Karl Heitmann
     <p class="noticia__paragraph">
       {{t.noticias.noticia1.p}}
     </p>
-    <a href="/opinión/programacion/2021/01/24/artesano-siglo-xxi.html">
+    <a href="{{ "/opinión/programacion/2021/01/24/artesano-siglo-xxi.html" | relative_url }}">
       {{t.noticias.noticia1.link}}
     </a>
     <figure class="noticia__figure">
@@ -91,7 +80,7 @@ subtitle: Karl Heitmann
     <p class="noticia__paragraph">
       {{t.noticias.noticia2.p}}
     </p>
-    <a href="/artes/tango.html">
+    <a href="{{ "/artes/tango.html" | relative_url }}">
       {{t.noticias.noticia2.link}}
     </a>
     <figure class="noticia__figure">
@@ -109,7 +98,7 @@ subtitle: Karl Heitmann
     <p class="noticia__paragraph">
       {{t.noticias.noticia3.p}}
     </p>
-    <a href="/proyectos/workana.html">
+    <a href="{{ "/proyectos/workana.html" | relative_url }}">
       {{t.noticias.noticia3.link}}
     </a>
     <figure class="noticia__figure">

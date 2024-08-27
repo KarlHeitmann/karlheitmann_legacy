@@ -81,9 +81,7 @@ permalink: /about
     axios.get('https://api.github.com/users/KarlHeitmann')
       .then(function (response) {
         // handle success
-        // console.log(response.body.data);
         const {data} = response;
-        console.log(data);
         const {
           avatar_url,
           followers,
@@ -100,11 +98,8 @@ permalink: /about
     axios.get('https://api.stackexchange.com/2.2/users/2101187?order=desc&sort=reputation&site=stackoverflow')
       .then(response => {
         const {data} = response;
-        // console.log(data)
         const {items} = data;
-        // console.log(items);
         items.forEach(item => {
-          // console.log(item)
           if (item.display_name == 'Karl') {
             var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
             d.setUTCSeconds(item.creation_date);
@@ -120,7 +115,6 @@ permalink: /about
     axios.get('https://lichess.org/api/user/kheitmann')
       .then(response => {
         const {data} = response;
-        console.log(data);
         // var utcSeconds = data.createdAt;
         var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
         d.setUTCSeconds(data.createdAt / 1000);
@@ -138,8 +132,6 @@ permalink: /about
           return prev += Number(data['perfs'][key]['rating']);
         }, 0)
         document.getElementById("about-lichess-profile__username-score").innerHTML = (suma_puntaje / keys.length);
-        // console.log(suma_puntaje / keys.length)
-        // console.log(data)
       })
   </script>
 </div>

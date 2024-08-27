@@ -9,7 +9,7 @@ sidebar: sidebar/artes.html
 <div class="bg-video">
   <video class="bg-video__content" autoplay muted loop>
     <source
-    src="/assets/vid/flauta.mp4"
+    src="{{ "/assets/vid/flauta.mp4" | relative_url }}"
     type="video/mp4">
     <!-- <source src="img/video.webm" type="video/webm"> -->
     Your browser is not supported!
@@ -31,7 +31,7 @@ sidebar: sidebar/artes.html
     <p class="noticia__paragraph">
       Nota sobre el tango y el Colectivo Libertango
     </p>
-    <a href="/artes/tango.html">Ver más...</a>
+    <a href="{{ "/artes/tango.html" | relative_url }}">Ver más...</a>
     <figure class="noticia__figure">
       <img
       width="100px"
@@ -48,7 +48,7 @@ sidebar: sidebar/artes.html
     <p class="noticia__paragraph">
       Mi experiencia manejando esta técnica
     </p>
-    <a href="/artes/fingerstyle.html">Ver más...</a>
+    <a href="{{ "/artes/fingerstyle.html" | relative_url }}">Ver más...</a>
     <figure class="noticia__figure">
       <img
       width="100px"
